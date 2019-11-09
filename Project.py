@@ -215,8 +215,8 @@ def read_in(file):
             elif current_arr[1]=="DATE" and flag:
                 flag=False
                 date_arr = current_arr[2:] #extracts the date argument from the line
-                partial_date=include_partial_dates(date_arr)
-                dic[tmp]= convert_date(date_arr) #converts the date into correct format
+                partial_date=include_partial_dates(date_arr, line_num, tmp, list(dic.values())[0])
+                dic[tmp]= convert_date(partial_date) #converts the date into correct format
             #determines if the tag level is correct
             elif current_arr[0]=='1' and current_arr[1] in tag_one:
             #"NAME", "SEX", "BIRT", "DEAT","FAMC","FAMS","MARR", "DIV","HUSB","WIFE","CHIL"
@@ -1166,7 +1166,7 @@ def list_upcoming_anni():
     result = True
     for value in family_dic.values():
         if (value["MARR"] == 'NA'):
-            error_array.append("ERROR: FAMILY: US39: {}: Family {} does not have married date!".format(value["FAM_LINE"], value["FAM"]))
+            error_array.append("ERROR: FAMILY: US39: {}: {}: Family does not have married date!".format(value["FAM_LINE"], value["FAM"]))
             result = False
         else:
             current_marr = value["MARR"]
@@ -1188,11 +1188,17 @@ def list_upcoming_anni():
 # In[54]:
 
 
+valid_month=['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 #US 41 Include partial dates
-def include_partial_dates(date):
+tag_map={"BIRT": "INDIVIDUAL", "DEAT": "INDIVIDUAL", "MARR": "FAMILY", "DIV": "FAMILY"}
+def include_partial_dates(date, line_num, tag, tag_id):
+    error_tag=tag_map[tag]
     if len(date) == 2:
+        if data[0] not in valid_month:
+            error_array.append("ERROR: "+ error_tag + ": US41: {}: {}: Invalid month format!".format(line_num, tag_id))
+            data[0]="JAN"
         date.insert(0, 1)
-    elif len(date) ==1:
+    elif len(date) == 1:
         date.insert(0, "JAN")
         date.insert(0, 1)
     return date

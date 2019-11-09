@@ -27,7 +27,7 @@ People Table
 | @I23@ |    Vonnie /Malagon/   |    M   |   1936-3-10 |   1  |  False |  1937-7-6  |  @F3@  |         NA         |
 | @I24@ |     Shena /Malagon/   |    F   |   1937-11-6 |  82  |  True  |     NA     |  @F3@  |        @F13@       |
 | @I25@ |    Hailey /Malagon/   |    F   |   1938-10-8 |  19  |  False |  1958-9-18 |  @F3@  |        @F14@       |
-| @I26@ |    Milford /Malagon/  |    M   |   1939-11-8 |  79  |  True  |     NA     |  @F3@  |        @F15@       |
+| @I26@ |    Milford /Malagon/  |    M   |   1939-11-8 |  80  |  True  |     NA     |  @F3@  |        @F15@       |
 | @I27@ |    Rashida /Malagon/  |    F   |   1940-12-7 |  78  |  True  |     NA     |  @F3@  |  @F16@,@F17@,@F18@ |
 | @I28@ |    Deeann /Malagon/   |    F   |  1940-12-10 |  78  |  True  |     NA     |  @F3@  |         NA         |
 | @I29@ |     Dario /Malagon/   |    M   |   1942-8-18 |  77  |  True  |     NA     |  @F3@  |        @F19@       |
@@ -82,7 +82,7 @@ US29: Deceased People Table
 +-------+----------------------+--------+-------------+------+--------+------------+
 |  @I1@ |  Willodean /Malagon/ |    F   |   1974-7-7  |  -4  |  False |  1970-6-20 |
 |  @I5@ |    Josh /Malagon/    |    M   |  1964-10-31 |  20  |  False |  1984-5-7  |
-| @I14@ |    Jacob /Malagon/   |    M   |   1970-11-8 |  17  |  False |  1988-9-29 |
+| @I14@ |    Jacob /Malagon/   |    M   |   1970-11-8 |  18  |  False |  1988-9-29 |
 | @I15@ |  Jaqueline /Kindel/  |    F   |   1969-9-8  |  18  |  False |  1987-7-6  |
 | @I18@ |    Tesha /Malagon/   |    F   |   1819-7-8  |  200 |  False |  2019-8-2  |
 | @I21@ |     Regena /Ali/     |    F   |   1820-10-8 |  -1  |  False |  1819-3-3  |
@@ -109,7 +109,7 @@ US30: Living & Married People Table
 | @I20@ |    Lucile /Malagon/   |    F   |   1931-9-9  |  88  |  True |   NA  |        @F4@        |
 | @I22@ |      Tom /Malagon/    |    M   |   1923-5-8  |  96  |  True |   NA  |     @F11@,@F12@    |
 | @I24@ |     Shena /Malagon/   |    F   |   1937-11-6 |  82  |  True |   NA  |        @F13@       |
-| @I26@ |    Milford /Malagon/  |    M   |   1939-11-8 |  79  |  True |   NA  |        @F15@       |
+| @I26@ |    Milford /Malagon/  |    M   |   1939-11-8 |  80  |  True |   NA  |        @F15@       |
 | @I27@ |    Rashida /Malagon/  |    F   |   1940-12-7 |  78  |  True |   NA  |  @F16@,@F17@,@F18@ |
 | @I29@ |     Dario /Malagon/   |    M   |   1942-8-18 |  77  |  True |   NA  |        @F19@       |
 | @I30@ |     Chet /Malagon/    |    M   |   1942-9-18 |  77  |  True |   NA  |  @F20@,@F21@,@F22@ |
@@ -139,14 +139,12 @@ US31: Unmarried people over 30
 +-------+--------------------+--------+-------------+-----+-------+-------+--------+
 
 US38 List Upcoming Birthdays Table
-+-------+--------------------+--------+------------+-----+--------+------------+--------------------+
-|   ID  |        Name        | Gender |  Birthday  | Age | Alive  |   Death    |       Spouse       |
-+-------+--------------------+--------+------------+-----+--------+------------+--------------------+
-|  @I6@ |   Samuel /Venzon/  |    M   |  1958-12-6 |  60 |  True  |     NA     |        @F1@        |
-| @I14@ |   Jacob /Malagon/  |    M   |  1970-11-8 |  17 |  False |  1988-9-29 |        @F10@       |
-| @I26@ |  Milford /Malagon/ |    M   |  1939-11-8 |  79 |  True  |     NA     |        @F15@       |
-| @I27@ |  Rashida /Malagon/ |    F   |  1940-12-7 |  78 |  True  |     NA     |  @F16@,@F17@,@F18@ |
-+-------+--------------------+--------+------------+-----+--------+------------+--------------------+
++-------+--------------------+--------+------------+-----+-------+-------+--------------------+
+|   ID  |        Name        | Gender |  Birthday  | Age | Alive | Death |       Spouse       |
++-------+--------------------+--------+------------+-----+-------+-------+--------------------+
+|  @I6@ |   Samuel /Venzon/  |    M   |  1958-12-6 |  60 |  True |   NA  |        @F1@        |
+| @I27@ |  Rashida /Malagon/ |    F   |  1940-12-7 |  78 |  True |   NA  |  @F16@,@F17@,@F18@ |
++-------+--------------------+--------+------------+-----+-------+-------+--------------------+
 
 ------error messages------
 ERROR: INDIVIDUAL: US22: 452: @I44@: Individuals have the same ID
@@ -181,13 +179,13 @@ ERROR: INDIVIDUAL: US30: 144: @I14@: Deceased Person is married to Person @F10@
 ERROR: INDIVIDUAL: US30: 156: @I15@: Deceased Person is married to Person @F10@
 ERROR: INDIVIDUAL: US30: 258: @I25@: Deceased Person is married to Person @F14@
 ERROR: INDIVIDUAL: US33: 125: Orphaned child @I12@ does not have a family ID!
-ERROR: FAMILY: US39: 504: Family @F4@ does not have married date!
-ERROR: FAMILY: US39: 528: Family @F8@ does not have married date!
-ERROR: FAMILY: US39: 531: Family @F6@ does not have married date!
-ERROR: FAMILY: US39: 553: Family @F11@ does not have married date!
-ERROR: FAMILY: US39: 583: Family @F15@ does not have married date!
-ERROR: FAMILY: US39: 616: Family @F20@ does not have married date!
-ERROR: FAMILY: US39: 628: Family @F22@ does not have married date!
+ERROR: FAMILY: US39: 504: @F4@: Family does not have married date!
+ERROR: FAMILY: US39: 528: @F8@: Family does not have married date!
+ERROR: FAMILY: US39: 531: @F6@: Family does not have married date!
+ERROR: FAMILY: US39: 553: @F11@: Family does not have married date!
+ERROR: FAMILY: US39: 583: @F15@: Family does not have married date!
+ERROR: FAMILY: US39: 616: @F20@: Family does not have married date!
+ERROR: FAMILY: US39: 628: @F22@: Family does not have married date!
 -----anomaly messages-----
 ANOMALY: INDIVIDUAL: US04: 571: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
 ANOMALY: INDIVIDUAL: US04: 571: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
