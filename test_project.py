@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
 # In[1]:
@@ -9,6 +9,8 @@ import unittest
 import mock
 import Project
 from unittest.mock import MagicMock
+from datetime import datetime
+from datetime import timedelta
 
 
 # In[2]:
@@ -2446,10 +2448,39 @@ def test_large_age_diff_fail():
 # In[52]:
 
 
+# US35
+def test_list_recent_births_pass():
+    
+    #Mock individuals dictionary
+    individuals = {'@I1@': {'INDI': '@I1@', 'INDI_LINE': 14, 'NAME': 'David /Chang/', 'NAME_LINE': 15, 'SEX': 'M', 'SEX_LINE': 19, 'BIRT': '1990-11-9', 'INDI_CHILD': ['@F1@'], 'SPOUSE': 'NA', 'FAMC_LINE': 22, 'DEAT': 'NA', 'BIRT_LINE': 22, 'AGE': '0', 'ALIVE': True}}
+    
+    #Creates a new date that's within 30 days from today's date
+    current_date = datetime.today() + timedelta(days=10)
+    individuals["@I1@"]["BIRT"] = current_date.strftime("%Y-%m-%d")
+    
+    Project.individuals = individuals
+
+    return Project.list_recent_births() == True
+
+
+# In[53]:
+
+
+def test_list_recent_births_fail():
+    
+    #Mock individuals dictionary
+    individuals = {'@I1@': {'INDI': '@I1@', 'INDI_LINE': 14, 'NAME': 'David /Chang/', 'NAME_LINE': 15, 'SEX': 'M', 'SEX_LINE': 19, 'BIRT': 'NA', 'INDI_CHILD': ['@F1@'], 'SPOUSE': 'NA', 'FAMC_LINE': 22, 'DEAT': 'NA', 'BIRT_LINE': 22, 'AGE': '0', 'ALIVE': True}}
+    
+    Project.individuals = individuals
+
+    return Project.list_recent_births() == False
+
+
+# In[54]:
+
+
 # US38 Test tist upcoming birthdays
 def test_list_upcoming_bday_pass():
-    from datetime import datetime
-    from datetime import timedelta
     
     #Mock individuals dictionary
     individuals = {'@I1@': {'INDI': '@I1@', 'INDI_LINE': 14, 'NAME': 'David /Chang/', 'NAME_LINE': 15, 'SEX': 'M', 'SEX_LINE': 19, 'BIRT': '1988-11-9', 'INDI_CHILD': ['@F1@'], 'SPOUSE': 'NA', 'FAMC_LINE': 22, 'DEAT': 'NA', 'BIRT_LINE': 22, 'AGE': '31', 'ALIVE': True}}
@@ -2464,7 +2495,7 @@ def test_list_upcoming_bday_pass():
     return True
 
 
-# In[53]:
+# In[55]:
 
 
 # US38 Test list upcoming birthdays
@@ -2476,7 +2507,7 @@ def test_list_upcoming_bday_fail():
     return Project.list_upcoming_bday() == False
 
 
-# In[54]:
+# In[56]:
 
 
 # US39 Test list upcoming birthdays
@@ -2496,7 +2527,7 @@ def test_list_upcoming_anni_pass():
     return True
 
 
-# In[55]:
+# In[57]:
 
 
 # US39 Test list upcoming birthdays
@@ -2508,7 +2539,7 @@ def test_list_upcoming_anni_fail():
     return Project.list_upcoming_anni() == False
 
 
-# In[56]:
+# In[58]:
 
 
 def test_check_sibling_spacing_1_month_apart():
@@ -2525,7 +2556,7 @@ def test_check_sibling_spacing_1_month_apart():
     return True
 
 
-# In[57]:
+# In[59]:
 
 
 def test_check_sibling_spacing_siblings_1_day_apart():
@@ -2543,7 +2574,7 @@ def test_check_sibling_spacing_siblings_1_day_apart():
     return True
 
 
-# In[58]:
+# In[60]:
 
 
 def test_check_sibling_marriage_married():
@@ -2562,7 +2593,7 @@ def test_check_sibling_marriage_married():
     return True
 
 
-# In[59]:
+# In[61]:
 
 
 def test_check_sibling_marriage_not_married():
@@ -2581,7 +2612,7 @@ def test_check_sibling_marriage_not_married():
     return True
 
 
-# In[60]:
+# In[62]:
 
 
 def test_check_cousin_marriage_pass():
@@ -2600,7 +2631,7 @@ def test_check_cousin_marriage_pass():
     return True
 
 
-# In[61]:
+# In[63]:
 
 
 def test_check_cousin_marriage_fail():
@@ -2616,7 +2647,7 @@ def test_check_cousin_marriage_fail():
     return len(Project.anomaly_array) == 0
 
 
-# In[62]:
+# In[64]:
 
 
 def test_unique_indi_and_family():
@@ -2629,7 +2660,7 @@ def test_unique_indi_and_family():
     return Project.error_array==['ERROR: INDIVIDUAL: US22: 51: @I1@: Individuals have the same ID', 'ERROR: FAMILY: US22: 62: @F1@: Two families share the same ID ']
 
 
-# In[63]:
+# In[65]:
 
 
 def test_unique_family_by_spouses_positive_result():
@@ -2644,7 +2675,7 @@ def test_unique_family_by_spouses_positive_result():
     return True
 
 
-# In[64]:
+# In[66]:
 
 
 def test_unique_family_by_spouses_negative_result():
@@ -2659,7 +2690,7 @@ def test_unique_family_by_spouses_negative_result():
     return True
 
 
-# In[65]:
+# In[67]:
 
 
 def test_check_multiple_births_6_with_same_birthday():
@@ -2676,7 +2707,7 @@ def test_check_multiple_births_6_with_same_birthday():
     return True
 
 
-# In[66]:
+# In[68]:
 
 
 def test_check_multiple_births_4_with_same_birthday():
@@ -2693,7 +2724,7 @@ def test_check_multiple_births_4_with_same_birthday():
     return True
 
 
-# In[67]:
+# In[69]:
 
 
 def test_family_gender_fail():
@@ -2747,7 +2778,7 @@ def test_family_gender_fail():
     
 
 
-# In[68]:
+# In[70]:
 
 
 def test_family_gender_pass():
@@ -2801,7 +2832,7 @@ def test_family_gender_pass():
     
 
 
-# In[69]:
+# In[71]:
 
 
 def test_valid_dates_fail():
@@ -2825,7 +2856,7 @@ def test_valid_dates_fail():
     
 
 
-# In[70]:
+# In[72]:
 
 
 def test_valid_dates_pass():
@@ -2849,7 +2880,7 @@ def test_valid_dates_pass():
     
 
 
-# In[71]:
+# In[73]:
 
 
 import unittest
@@ -2999,14 +3030,12 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue(test_valid_dates_fail())
     def test_valid_dates_pass(self):
         self.assertTrue(test_valid_dates_pass())
+    def test_list_recent_births_pass(self):
+        self.assertTrue(test_list_recent_births_pass())
+    def test_list_recent_births_fail(self):
+        self.assertTrue(test_list_recent_births_fail())
         
         
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStringMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
-
-
-# In[ ]:
-
-
-
 
