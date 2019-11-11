@@ -1220,7 +1220,7 @@ def test_dates_error():
     Project.family_dic = family_dic
     Project.individuals=individuals
     Project.error_array = []
-    Project.validate_dates()
+    Project.is_dates_before_current_date()
 
     return Project.error_array==['ERROR: FAMILY: US01: 200: @F8@: Family has marrige date 2020-3-24 later than today',
                                  'ERROR: FAMILY: US01: 250: @F8@: Family has divorce date 2021-3-24 later than today',
@@ -1257,7 +1257,7 @@ def test_dates_pass():
     Project.family_dic = family_dic
     Project.individuals=individuals
     Project.error_array = []
-    Project.validate_dates()
+    Project.is_dates_before_current_date()
 
     return len(Project.error_array)==0
 
