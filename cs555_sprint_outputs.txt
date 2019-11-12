@@ -111,6 +111,68 @@ Families Table
 | @F30@ |      NA     |     NA     |    @I66@   |  Djuradja /Malagon/  |   @I67@ |  Josefin /Parthenope/ |                                                                       @I68@                                                                     |
 +-------+-------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
+US28: List siblings by decreasing age
++-----Family @F1@-----+
+Individual:@I7@, Age:46 
+Individual:@I13@, Age:44 
++-----Family @F3@-----+
+Individual:@I18@, Age:200 
+Individual:@I22@, Age:96 
+Individual:@I2@, Age:89 
+Individual:@I20@, Age:88 
+Individual:@I24@, Age:82 
+Individual:@I26@, Age:80 
+Individual:@I27@, Age:78 
+Individual:@I28@, Age:78 
+Individual:@I29@, Age:77 
+Individual:@I30@, Age:77 
+Individual:@I32@, Age:76 
+Individual:@I31@, Age:64 
+Individual:@I62@, Age:42 
+Individual:@I33@, Age:34 
+Individual:@I45@, Age:33 
+Individual:@I48@, Age:32 
+Individual:@I56@, Age:31 
+Individual:@I58@, Age:31 
+Individual:@I59@, Age:30 
+Individual:@I65@, Age:29 
+Individual:@I25@, Age:20 
+Individual:@I66@, Age:20 
+Individual:@I23@, Age:1 
+Individual:@I21@, Age:-1 
++-----Family @F5@-----+
+Individual:@I10@, Age:42 
++-----Family @F7@-----+
+Individual:@I11@, Age:32 
+Individual:@I19@, Age:32 
++-----Family @F9@-----+
+Individual:@I71@, Age:0 
++-----Family @F12@-----+
+Individual:@I35@, Age:64 
++-----Family @F13@-----+
+Individual:@I37@, Age:39 
++-----Family @F14@-----+
+Individual:@I72@, Age:59 
++-----Family @F22@-----+
+Individual:@I42@, Age:39 
++-----Family @F24@-----+
+Individual:@I46@, Age:34 
++-----Family @F25@-----+
+Individual:@I50@, Age:9 
+Individual:@I51@, Age:9 
+Individual:@I52@, Age:9 
+Individual:@I53@, Age:9 
+Individual:@I54@, Age:9 
+Individual:@I55@, Age:9 
++-----Family @F26@-----+
+Individual:@I69@, Age:0 
+Individual:@I70@, Age:0 
++-----Family @F29@-----+
+Individual:@I64@, Age:19 
++-----Family @F30@-----+
+Individual:@I68@, Age:11 
++-----End of US28-----+
+
 US29: Deceased People Table
 +-------+-----------------------+--------+-------------+------+--------+-------------+
 |   ID  |          Name         | Gender |   Birthday  | Age  | Alive  |    Death    |
@@ -287,6 +349,7 @@ ERROR: INDIVIDUAL: US13: 554: Child @I56@ is born within 8 months and more than 
 ERROR: INDIVIDUAL: US13: 573: Child @I58@ is born within 8 months and more than 2 days of sibling
 ERROR: FAMILY: US21: 102: @I9@: Is Husband and has Sex as Female
 ERROR: INDIVIDUAL: US23: 14: @I1@: Willodean /Malagon/: Individuals have no birth date 
+ERROR: FAMILY: US28: 14: Child @I1@ has no age
 ERROR: INDIVIDUAL: US30: 55: @I5@: Deceased Person is married to Person @F5@
 ERROR: INDIVIDUAL: US30: 144: @I14@: Deceased Person is married to Person @F10@
 ERROR: INDIVIDUAL: US30: 156: @I15@: Deceased Person is married to Person @F10@
@@ -338,6 +401,21 @@ ANOMALY: FAMILY: US20: 769: @F4@: Person @I20@ should not marry person @I4@
 ANOMALY: INDIVIDUAL: US23: 360: @I35@: @I31@: Individuals have the same name Sock /Malagon/ and birth date 1955-10-17
 ANOMALY: FAMILY: US24: 933: @F28@: Family contains same husband, wife and marriage date as another family
 ANOMALY: INDIVIDUAL: US25: 821: @I35@: @I31@: Individuals share the same first name Sock /Malagon/ and birth date 1955-10-17 from family @F12@
+ANOMALY: FAMILY: US28: 767: Family @F4@ has no children
+ANOMALY: FAMILY: US28: 791: Family @F8@ has no children
+ANOMALY: FAMILY: US28: 794: Family @F6@ has no children
+ANOMALY: FAMILY: US28: 808: Family @F10@ has no children
+ANOMALY: FAMILY: US28: 817: Family @F11@ has no children
+ANOMALY: FAMILY: US28: 848: Family @F15@ has no children
+ANOMALY: FAMILY: US28: 852: Family @F16@ has no children
+ANOMALY: FAMILY: US28: 858: Family @F17@ has no children
+ANOMALY: FAMILY: US28: 867: Family @F18@ has no children
+ANOMALY: FAMILY: US28: 875: Family @F19@ has no children
+ANOMALY: FAMILY: US28: 881: Family @F20@ has no children
+ANOMALY: FAMILY: US28: 887: Family @F21@ has no children
+ANOMALY: FAMILY: US28: 901: Family @F23@ has no children
+ANOMALY: FAMILY: US28: 927: Family @F27@ has no children
+ANOMALY: FAMILY: US28: 933: Family @F28@ has no children
 ANOMALY: FAMILY: US32: 782: @F7@: The two or more individuals were born at the same time
 ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
 ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
@@ -349,47 +427,3 @@ ANOMALY: FAMILY: US34: 771: @F5@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 794: @F6@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 841: @F14@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 848: @F15@: Family has a large spouse age difference
-US33: Orphaned Children
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-| @I10@ |  Félicienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-
-US33: Orphaned Children
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-|  @I3@ |     Hodia /Christos/    |    M   |  2004-9-7  |  15 |  True |   NA  |   NA   |
-| @I10@ |  Félicienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-
-US31: Unmarried people over 30
-+------+---------------------+--------+-----------+-----+-------+-------+--------+
-|  ID  |         Name        | Gender |  Birthday | Age | Alive | Death | Spouse |
-+------+---------------------+--------+-----------+-----+-------+-------+--------+
-| @I6@ |  Isaías /Christos/ |    F   |  1950-9-8 |  69 |  True |   NA  |   NA   |
-| @I7@ |   Gunni /Christos/  |    M   |  1949-9-8 |  70 |  True |   NA  |   NA   |
-+------+---------------------+--------+-----------+-----+-------+-------+--------+
-
-US39: List Upcoming Anniversaries Table
-+------+-------------+------------+----------------+---------+---------------+
-|  ID  |   Married   | Husband ID |  Husband Name  | Wife ID |   Wife Name   |
-+------+-------------+------------+----------------+---------+---------------+
-| @F1@ |  2019-11-22 |    @I2@    |  Johny /Chang/ |   @I3@  |  Nancy /Tsai/ |
-+------+-------------+------------+----------------+---------+---------------+
-
-US38 List Upcoming Birthdays Table
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-| @I2@ |  Johny /Chang/ |    M   |  1958-11-25 |  61 |  True |   NA  |  @F1@  |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-
-US38 List Upcoming Birthdays Table
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-| @I1@ |  David /Chang/ |    M   |  2019-11-22 |  31 |  True |   NA  |   NA   |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-
