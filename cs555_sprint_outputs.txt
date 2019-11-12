@@ -49,7 +49,7 @@ People Table
 | @I45@ |     Otto /Malagon/    |    M   |   1986-8-8  |  33  |  True  |      NA     |  @F3@  |     @F23@,@F24@    |
 | @I46@ |     Hacer /Heitor/    |    F   |   1985-9-8  |  34  |  True  |      NA     |   NA   |        @F23@       |
 | @I48@ |     Janka /Malagon/   |    M   |   1987-8-7  |  32  |  True  |      NA     |  @F3@  |        @F25@       |
-| @I49@ |      Regena /Ùna/     |    F   |   1986-8-7  |  33  |  True  |      NA     |   NA   |        @F25@       |
+| @I49@ |      Regena /Ùna/    |    F   |   1986-8-7  |  33  |  True  |      NA     |   NA   |        @F25@       |
 | @I50@ |   Ziauddin /Malagon/  |    M   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
 | @I51@ |    Marika /Malagon/   |    F   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
 | @I52@ |    Alfons /Malagon/   |    M   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
@@ -69,7 +69,7 @@ People Table
 | @I66@ |   Djuradja /Malagon/  |    M   |   1990-9-10 |  20  |  False |  2010-11-10 |  @F3@  |        @F30@       |
 | @I67@ |  Josefin /Parthenope/ |    F   |   1990-9-10 |  20  |  False |  2010-10-10 |   NA   |        @F30@       |
 | @I68@ |  Svyatopolk /Malagon/ |    M   |   2008-9-9  |  11  |  True  |      NA     |  @F30@ |         NA         |
-| @I69@ |   Brünhild /Malagon/  |    M   |   2019-11-8 |   0  |  True  |      NA     |  @F26@ |         NA         |
+| @I69@ |   Brünhild /Malagon/ |    M   |   2019-11-8 |   0  |  True  |      NA     |  @F26@ |         NA         |
 | @I70@ |      Kennet /Edda/    |    F   |   2019-11-7 |   0  |  True  |      NA     |  @F26@ |         NA         |
 | @I71@ |     Louis /Venzon/    |    M   |  2019-10-29 |   0  |  True  |      NA     |  @F9@  |         NA         |
 | @I72@ |     Berto /Malagon/   |    F   |   1960-9-9  |  59  |  True  |      NA     |  @F14@ |         NA         |
@@ -103,7 +103,7 @@ Families Table
 | @F22@ |      NA     |     NA     |    @I30@   |    Chet /Malagon/    |    NA   |           NA          |                                                                       @I42@                                                                     |
 | @F24@ |      NA     |     NA     |    @I45@   |    Otto /Malagon/    |    NA   |           NA          |                                                                       @I46@                                                                     |
 | @F23@ |   2006-8-15 |     NA     |    @I45@   |    Otto /Malagon/    |   @I46@ |     Ezer /Malagon/    |                                                                        NA                                                                       |
-| @F25@ |   2007-8-3  |     NA     |    @I48@   |    Janka /Malagon/   |   @I49@ |      Regena /Ùna/     |                                                        @I50@,@I51@,@I52@,@I53@,@I54@,@I55@                                                      |
+| @F25@ |   2007-8-3  |     NA     |    @I48@   |    Janka /Malagon/   |   @I49@ |      Regena /Ùna/    |                                                        @I50@,@I51@,@I52@,@I53@,@I54@,@I55@                                                      |
 | @F26@ |   2010-4-3  |     NA     |    @I56@   |  Chinweuba /Malagon/ |   @I57@ |       Mona /Edda/     |                                                                    @I69@,@I70@                                                                  |
 | @F27@ |   2008-5-1  |     NA     |    @I60@   |   Arslan /Edgardo/   |   @I58@ |      Efa /Malagon/    |                                                                        NA                                                                       |
 | @F28@ |   2008-5-1  |     NA     |    @I61@   |   Arslan /Edgardo/   |   @I59@ |      Efa /Malagon/    |                                                                        NA                                                                       |
@@ -164,7 +164,7 @@ US30: Living & Married People Table
 | @I45@ |    Otto /Malagon/    |    M   |   1986-8-8  |  33  |  True |   NA  |     @F23@,@F24@    |
 | @I46@ |    Hacer /Heitor/    |    F   |   1985-9-8  |  34  |  True |   NA  |        @F23@       |
 | @I48@ |    Janka /Malagon/   |    M   |   1987-8-7  |  32  |  True |   NA  |        @F25@       |
-| @I49@ |     Regena /Ùna/     |    F   |   1986-8-7  |  33  |  True |   NA  |        @F25@       |
+| @I49@ |     Regena /Ùna/    |    F   |   1986-8-7  |  33  |  True |   NA  |        @F25@       |
 | @I56@ |  Chinweuba /Malagon/ |    M   |   1988-5-7  |  31  |  True |   NA  |        @F26@       |
 | @I57@ |      Mona /Edda/     |    F   |   1986-8-8  |  33  |  True |   NA  |        @F26@       |
 | @I58@ |     Efa /Malagon/    |    F   |   1988-8-14 |  31  |  True |   NA  |        @F27@       |
@@ -196,13 +196,13 @@ US33: Orphaned Children
 +-------+-----------------------+--------+-----------+-----+-------+-------+--------+
 
 US35 List Recent Births Table
-+-------+---------------------+--------+-------------+-----+-------+-------+--------+
-|   ID  |         Name        | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+-------+---------------------+--------+-------------+-----+-------+-------+--------+
++-------+----------------------+--------+-------------+-----+-------+-------+--------+
+|   ID  |         Name         | Gender |   Birthday  | Age | Alive | Death | Spouse |
++-------+----------------------+--------+-------------+-----+-------+-------+--------+
 | @I69@ |  Brünhild /Malagon/ |    M   |   2019-11-8 |   0 |  True |   NA  |   NA   |
-| @I70@ |     Kennet /Edda/   |    F   |   2019-11-7 |   0 |  True |   NA  |   NA   |
-| @I71@ |    Louis /Venzon/   |    M   |  2019-10-29 |   0 |  True |   NA  |   NA   |
-+-------+---------------------+--------+-------------+-----+-------+-------+--------+
+| @I70@ |     Kennet /Edda/    |    F   |   2019-11-7 |   0 |  True |   NA  |   NA   |
+| @I71@ |    Louis /Venzon/    |    M   |  2019-10-29 |   0 |  True |   NA  |   NA   |
++-------+----------------------+--------+-------------+-----+-------+-------+--------+
 
 US38 List Upcoming Birthdays Table
 +-------+--------------------+--------+-------------+-----+-------+-------+--------------------+
@@ -225,7 +225,7 @@ US39: List Upcoming Anniversaries Table
 ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
 ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
 ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: @I46@: Individuals have the same ID
+ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
 ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
 ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
 ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
@@ -353,7 +353,7 @@ US33: Orphaned Children
 +-------+-------------------------+--------+------------+-----+-------+-------+--------+
 |   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
 +-------+-------------------------+--------+------------+-----+-------+-------+--------+
-| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
+| @I10@ |  Félicienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
 +-------+-------------------------+--------+------------+-----+-------+-------+--------+
 
 US33: Orphaned Children
@@ -361,14 +361,14 @@ US33: Orphaned Children
 |   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
 +-------+-------------------------+--------+------------+-----+-------+-------+--------+
 |  @I3@ |     Hodia /Christos/    |    M   |  2004-9-7  |  15 |  True |   NA  |   NA   |
-| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
+| @I10@ |  Félicienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
 +-------+-------------------------+--------+------------+-----+-------+-------+--------+
 
 US31: Unmarried people over 30
 +------+---------------------+--------+-----------+-----+-------+-------+--------+
 |  ID  |         Name        | Gender |  Birthday | Age | Alive | Death | Spouse |
 +------+---------------------+--------+-----------+-----+-------+-------+--------+
-| @I6@ |  IsaÃ­as /Christos/ |    F   |  1950-9-8 |  69 |  True |   NA  |   NA   |
+| @I6@ |  Isaías /Christos/ |    F   |  1950-9-8 |  69 |  True |   NA  |   NA   |
 | @I7@ |   Gunni /Christos/  |    M   |  1949-9-8 |  70 |  True |   NA  |   NA   |
 +------+---------------------+--------+-----------+-----+-------+-------+--------+
 

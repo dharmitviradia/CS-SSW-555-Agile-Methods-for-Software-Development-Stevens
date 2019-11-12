@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 # coding: utf-8
 
 # In[1]:
@@ -2670,7 +2670,7 @@ def test_unique_indi_and_family():
 
 
     Project.read_in(file)
-    return Project.error_array==['ERROR: INDIVIDUAL: US22: 51: @I1@: Individuals have the same ID', 'ERROR: FAMILY: US22: 62: @F1@: Two families share the same ID ']
+    return Project.error_array==['ERROR: INDIVIDUAL: US22: 51: Two or more Individuals @I1@: have the same ID', 'ERROR: FAMILY: US22: 62: Two or more families @F1@: have the same ID']
 
 
 # In[66]:
@@ -3057,4 +3057,10 @@ class TestStringMethods(unittest.TestCase):
         
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStringMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
+
+
+# In[ ]:
+
+
+
 
