@@ -78,7 +78,7 @@ Families Table
 +-------+------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |   ID  |  Married   |  Divorced  | Husband ID |     Husband Name     | Wife ID |       Wife Name       |                                                                     Children                                                                    |
 +-------+------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-|  @F1@ |     NA     |     NA     |    @I6@    |    Samuel /Venzon/   |   @I1@  |   Willodean /Malagon/ |                                                                    @I7@,@I13@                                                                   |
+|  @F1@ |  1970-7-7  |     NA     |    @I6@    |    Samuel /Venzon/   |   @I1@  |   Willodean /Malagon/ |                                                                    @I7@,@I13@                                                                   |
 |  @F2@ |  1947-9-17 |     NA     |    @I2@    |   Stephan /Malagon/  |   @I3@  |   Laverna /Leonhardt/ |                                                               @I1@,@I4@,@I5@,@I14@                                                              |
 |  @F3@ |  1925-4-28 |     NA     |    @I16@   |   Johnny /Malagon/   |   @I17@ |      Lura /Lomas/     |  @I2@,@I18@,@I20@,@I21@,@I22@,@I23@,@I24@,@I25@,@I26@,@I27@,@I28@,@I29@,@I30@,@I31@,@I32@,@I33@,@I45@,@I48@,@I56@,@I58@,@I59@,@I62@,@I65@,@I66@ |
 |  @F4@ |     NA     |     NA     |    @I4@    |     Ken /Malagon/    |   @I20@ |    Lucile /Malagon/   |                                                                        NA                                                                       |
@@ -216,7 +216,6 @@ ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
 ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
 ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
 ERROR: INDIVIDUAL: US22: 472: @I46@: Individuals have the same ID
-ERROR: FAMILY: US42: 713: @F1@: MARR Date is Invalid 1970-7-52
 ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
 ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
 ERROR: INDIVIDUAL: US02: 802: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
@@ -267,7 +266,6 @@ ERROR: INDIVIDUAL: US33: 14: Orphaned child @I1@ does not have age!
 ERROR: INDIVIDUAL: US33: 125: Orphaned child @I12@ does not have a family ID!
 ERROR: INDIVIDUAL: US35: 20: Person NA does not have birthday!
 ERROR: INDIVIDUAL: US38: 20: Person NA does not have birthday!
-ERROR: FAMILY: US39: 707: @F1@: Family does not have married date!
 ERROR: FAMILY: US39: 758: @F4@: Family does not have married date!
 ERROR: FAMILY: US39: 782: @F8@: Family does not have married date!
 ERROR: FAMILY: US39: 785: @F6@: Family does not have married date!
@@ -289,7 +287,7 @@ ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriag
 ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
 ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
 ANOMALY: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ANOMALY: INDIVIDUAL: US10: 73: @I6@: Husband of family @F1@: has no Birth Date
+ANOMALY: INDIVIDUAL: US10: 73: @I6@: Husband of family @F1@ is younger than 14 years old - Birth Date 1958-12-6
 ANOMALY: INDIVIDUAL: US10: 20: @I1@: Wife of family @F1@: has no Birth Date
 ANOMALY: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
 ANOMALY: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
