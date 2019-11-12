@@ -49,7 +49,7 @@ People Table
 | @I45@ |     Otto /Malagon/    |    M   |   1986-8-8  |  33  |  True  |      NA     |  @F3@  |     @F23@,@F24@    |
 | @I46@ |     Hacer /Heitor/    |    F   |   1985-9-8  |  34  |  True  |      NA     |   NA   |        @F23@       |
 | @I48@ |     Janka /Malagon/   |    M   |   1987-8-7  |  32  |  True  |      NA     |  @F3@  |        @F25@       |
-| @I49@ |      Regena /Ùna/    |    F   |   1986-8-7  |  33  |  True  |      NA     |   NA   |        @F25@       |
+| @I49@ |      Regena /Ùna/     |    F   |   1986-8-7  |  33  |  True  |      NA     |   NA   |        @F25@       |
 | @I50@ |   Ziauddin /Malagon/  |    M   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
 | @I51@ |    Marika /Malagon/   |    F   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
 | @I52@ |    Alfons /Malagon/   |    M   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
@@ -69,7 +69,7 @@ People Table
 | @I66@ |   Djuradja /Malagon/  |    M   |   1990-9-10 |  20  |  False |  2010-11-10 |  @F3@  |        @F30@       |
 | @I67@ |  Josefin /Parthenope/ |    F   |   1990-9-10 |  20  |  False |  2010-10-10 |   NA   |        @F30@       |
 | @I68@ |  Svyatopolk /Malagon/ |    M   |   2008-9-9  |  11  |  True  |      NA     |  @F30@ |         NA         |
-| @I69@ |   Brünhild /Malagon/ |    M   |   2019-11-8 |   0  |  True  |      NA     |  @F26@ |         NA         |
+| @I69@ |   Brünhild /Malagon/  |    M   |   2019-11-8 |   0  |  True  |      NA     |  @F26@ |         NA         |
 | @I70@ |      Kennet /Edda/    |    F   |   2019-11-7 |   0  |  True  |      NA     |  @F26@ |         NA         |
 | @I71@ |     Louis /Venzon/    |    M   |  2019-10-29 |   0  |  True  |      NA     |  @F9@  |         NA         |
 | @I72@ |     Berto /Malagon/   |    F   |   1960-9-9  |  59  |  True  |      NA     |  @F14@ |         NA         |
@@ -103,7 +103,7 @@ Families Table
 | @F22@ |      NA     |     NA     |    @I30@   |    Chet /Malagon/    |    NA   |           NA          |                                                                       @I42@                                                                     |
 | @F24@ |      NA     |     NA     |    @I45@   |    Otto /Malagon/    |    NA   |           NA          |                                                                       @I46@                                                                     |
 | @F23@ |   2006-8-15 |     NA     |    @I45@   |    Otto /Malagon/    |   @I46@ |     Ezer /Malagon/    |                                                                        NA                                                                       |
-| @F25@ |   2007-8-3  |     NA     |    @I48@   |    Janka /Malagon/   |   @I49@ |      Regena /Ùna/    |                                                        @I50@,@I51@,@I52@,@I53@,@I54@,@I55@                                                      |
+| @F25@ |   2007-8-3  |     NA     |    @I48@   |    Janka /Malagon/   |   @I49@ |      Regena /Ùna/     |                                                        @I50@,@I51@,@I52@,@I53@,@I54@,@I55@                                                      |
 | @F26@ |   2010-4-3  |     NA     |    @I56@   |  Chinweuba /Malagon/ |   @I57@ |       Mona /Edda/     |                                                                    @I69@,@I70@                                                                  |
 | @F27@ |   2008-5-1  |     NA     |    @I60@   |   Arslan /Edgardo/   |   @I58@ |      Efa /Malagon/    |                                                                        NA                                                                       |
 | @F28@ |   2008-5-1  |     NA     |    @I61@   |   Arslan /Edgardo/   |   @I59@ |      Efa /Malagon/    |                                                                        NA                                                                       |
@@ -164,7 +164,7 @@ US30: Living & Married People Table
 | @I45@ |    Otto /Malagon/    |    M   |   1986-8-8  |  33  |  True |   NA  |     @F23@,@F24@    |
 | @I46@ |    Hacer /Heitor/    |    F   |   1985-9-8  |  34  |  True |   NA  |        @F23@       |
 | @I48@ |    Janka /Malagon/   |    M   |   1987-8-7  |  32  |  True |   NA  |        @F25@       |
-| @I49@ |     Regena /Ùna/    |    F   |   1986-8-7  |  33  |  True |   NA  |        @F25@       |
+| @I49@ |     Regena /Ùna/     |    F   |   1986-8-7  |  33  |  True |   NA  |        @F25@       |
 | @I56@ |  Chinweuba /Malagon/ |    M   |   1988-5-7  |  31  |  True |   NA  |        @F26@       |
 | @I57@ |      Mona /Edda/     |    F   |   1986-8-8  |  33  |  True |   NA  |        @F26@       |
 | @I58@ |     Efa /Malagon/    |    F   |   1988-8-14 |  31  |  True |   NA  |        @F27@       |
@@ -196,13 +196,13 @@ US33: Orphaned Children
 +-------+-----------------------+--------+-----------+-----+-------+-------+--------+
 
 US35 List Recent Births Table
-+-------+----------------------+--------+-------------+-----+-------+-------+--------+
-|   ID  |         Name         | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+-------+----------------------+--------+-------------+-----+-------+-------+--------+
++-------+---------------------+--------+-------------+-----+-------+-------+--------+
+|   ID  |         Name        | Gender |   Birthday  | Age | Alive | Death | Spouse |
++-------+---------------------+--------+-------------+-----+-------+-------+--------+
 | @I69@ |  Brünhild /Malagon/ |    M   |   2019-11-8 |   0 |  True |   NA  |   NA   |
-| @I70@ |     Kennet /Edda/    |    F   |   2019-11-7 |   0 |  True |   NA  |   NA   |
-| @I71@ |    Louis /Venzon/    |    M   |  2019-10-29 |   0 |  True |   NA  |   NA   |
-+-------+----------------------+--------+-------------+-----+-------+-------+--------+
+| @I70@ |     Kennet /Edda/   |    F   |   2019-11-7 |   0 |  True |   NA  |   NA   |
+| @I71@ |    Louis /Venzon/   |    M   |  2019-10-29 |   0 |  True |   NA  |   NA   |
++-------+---------------------+--------+-------------+-----+-------+-------+--------+
 
 US38 List Upcoming Birthdays Table
 +-------+--------------------+--------+-------------+-----+-------+-------+--------------------+
@@ -233,9 +233,26 @@ ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before bi
 ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
 ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
 ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
+ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
+ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
+ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
 ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
 ERROR: INDIVIDUAL: US09: 431: @I42@: Child was born at 1980-8-18 after death of mother 1958-9-18
 ERROR: INDIVIDUAL: US09: 478: @I46@: Child was born at 1985-9-8 after death of mother 1958-9-18
+ERROR: INDIVIDUAL: US10: 20: @I1@: Wife of family @F1@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
+ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
 ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
 ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
 ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
@@ -269,6 +286,7 @@ ERROR: INDIVIDUAL: US13: 311: Child @I30@ is born within 8 months and more than 
 ERROR: INDIVIDUAL: US13: 554: Child @I56@ is born within 8 months and more than 2 days of sibling
 ERROR: INDIVIDUAL: US13: 573: Child @I58@ is born within 8 months and more than 2 days of sibling
 ERROR: FAMILY: US21: 102: @I9@: Is Husband and has Sex as Female
+ERROR: INDIVIDUAL: US23: 14: @I1@: Willodean /Malagon/: Individuals have no birth date 
 ERROR: INDIVIDUAL: US30: 55: @I5@: Deceased Person is married to Person @F5@
 ERROR: INDIVIDUAL: US30: 144: @I14@: Deceased Person is married to Person @F10@
 ERROR: INDIVIDUAL: US30: 156: @I15@: Deceased Person is married to Person @F10@
@@ -291,36 +309,19 @@ ERROR: FAMILY: US39: 946: @F30@: Family does not have married date!
 ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
 ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
 ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 20: @I1@: Has no Birthday
 ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
 ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
 ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
 ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
 ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
 ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
 ANOMALY: INDIVIDUAL: US10: 73: @I6@: Husband of family @F1@ is younger than 14 years old - Birth Date 1958-12-6
-ANOMALY: INDIVIDUAL: US10: 20: @I1@: Wife of family @F1@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
 ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
 ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
 ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
 ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
 ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
 ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ANOMALY: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
 ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
 ANOMALY: FAMILY: US14: 907: @F25@: Family has more than 5 siblings with same birthdate
 ANOMALY: FAMILY: US15: 736: @F3@: Family has 24 siblings which is more than 15 siblings
@@ -334,7 +335,6 @@ ANOMALY: INDIVIDUAL: US18: 323: @I31@: Individual married to sibling @I22@
 ANOMALY: INDIVIDUAL: US19: 106: @I10@: Individual married to cousin @I13@
 ANOMALY: INDIVIDUAL: US19: 134: @I13@: Individual married to cousin @I10@
 ANOMALY: FAMILY: US20: 769: @F4@: Person @I20@ should not marry person @I4@
-ANOMALY: INDIVIDUAL: US23: 14: @I1@: Willodean /Malagon/: Individuals have no birth date 
 ANOMALY: INDIVIDUAL: US23: 360: @I35@: @I31@: Individuals have the same name Sock /Malagon/ and birth date 1955-10-17
 ANOMALY: FAMILY: US24: 933: @F28@: Family contains same husband, wife and marriage date as another family
 ANOMALY: INDIVIDUAL: US25: 821: @I35@: @I31@: Individuals share the same first name Sock /Malagon/ and birth date 1955-10-17 from family @F12@
@@ -349,3 +349,47 @@ ANOMALY: FAMILY: US34: 771: @F5@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 794: @F6@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 841: @F14@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 848: @F15@: Family has a large spouse age difference
+US33: Orphaned Children
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+
+US33: Orphaned Children
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+|  @I3@ |     Hodia /Christos/    |    M   |  2004-9-7  |  15 |  True |   NA  |   NA   |
+| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+
+US31: Unmarried people over 30
++------+---------------------+--------+-----------+-----+-------+-------+--------+
+|  ID  |         Name        | Gender |  Birthday | Age | Alive | Death | Spouse |
++------+---------------------+--------+-----------+-----+-------+-------+--------+
+| @I6@ |  IsaÃ­as /Christos/ |    F   |  1950-9-8 |  69 |  True |   NA  |   NA   |
+| @I7@ |   Gunni /Christos/  |    M   |  1949-9-8 |  70 |  True |   NA  |   NA   |
++------+---------------------+--------+-----------+-----+-------+-------+--------+
+
+US39: List Upcoming Anniversaries Table
++------+-------------+------------+----------------+---------+---------------+
+|  ID  |   Married   | Husband ID |  Husband Name  | Wife ID |   Wife Name   |
++------+-------------+------------+----------------+---------+---------------+
+| @F1@ |  2019-11-22 |    @I2@    |  Johny /Chang/ |   @I3@  |  Nancy /Tsai/ |
++------+-------------+------------+----------------+---------+---------------+
+
+US38 List Upcoming Birthdays Table
++------+----------------+--------+-------------+-----+-------+-------+--------+
+|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+| @I2@ |  Johny /Chang/ |    M   |  1958-11-25 |  61 |  True |   NA  |  @F1@  |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+
+US38 List Upcoming Birthdays Table
++------+----------------+--------+-------------+-----+-------+-------+--------+
+|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+| @I1@ |  David /Chang/ |    M   |  2019-11-22 |  31 |  True |   NA  |   NA   |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+
