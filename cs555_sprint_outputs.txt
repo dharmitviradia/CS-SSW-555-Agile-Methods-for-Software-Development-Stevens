@@ -49,7 +49,7 @@ People Table
 | @I45@ |     Otto /Malagon/    |    M   |   1986-8-8  |  33  |  True  |      NA     |  @F3@  |     @F23@,@F24@    |
 | @I46@ |     Hacer /Heitor/    |    F   |   1985-9-8  |  34  |  True  |      NA     |   NA   |        @F23@       |
 | @I48@ |     Janka /Malagon/   |    M   |   1987-8-7  |  32  |  True  |      NA     |  @F3@  |        @F25@       |
-| @I49@ |      Regena /Ùna/    |    F   |   1986-8-7  |  33  |  True  |      NA     |   NA   |        @F25@       |
+| @I49@ |      Regena /Ùna/     |    F   |   1986-8-7  |  33  |  True  |      NA     |   NA   |        @F25@       |
 | @I50@ |   Ziauddin /Malagon/  |    M   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
 | @I51@ |    Marika /Malagon/   |    F   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
 | @I52@ |    Alfons /Malagon/   |    M   |   2010-1-1  |   9  |  True  |      NA     |  @F25@ |         NA         |
@@ -69,7 +69,7 @@ People Table
 | @I66@ |   Djuradja /Malagon/  |    M   |   1990-9-10 |  20  |  False |  2010-11-10 |  @F3@  |        @F30@       |
 | @I67@ |  Josefin /Parthenope/ |    F   |   1990-9-10 |  20  |  False |  2010-10-10 |   NA   |        @F30@       |
 | @I68@ |  Svyatopolk /Malagon/ |    M   |   2008-9-9  |  11  |  True  |      NA     |  @F30@ |         NA         |
-| @I69@ |   Brünhild /Malagon/ |    M   |   2019-11-8 |   0  |  True  |      NA     |  @F26@ |         NA         |
+| @I69@ |   Brünhild /Malagon/  |    M   |   2019-11-8 |   0  |  True  |      NA     |  @F26@ |         NA         |
 | @I70@ |      Kennet /Edda/    |    F   |   2019-11-7 |   0  |  True  |      NA     |  @F26@ |         NA         |
 | @I71@ |     Louis /Venzon/    |    M   |  2019-10-29 |   0  |  True  |      NA     |  @F9@  |         NA         |
 | @I72@ |     Berto /Malagon/   |    F   |   1960-9-9  |  59  |  True  |      NA     |  @F14@ |         NA         |
@@ -79,7 +79,7 @@ Families Table
 +-------+-------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |   ID  |   Married   |  Divorced  | Husband ID |     Husband Name     | Wife ID |       Wife Name       |                                                                     Children                                                                    |
 +-------+-------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-|  @F1@ |  1970-11-29 |     NA     |     NA     |          NA          |    NA   |           NA          |                                                                                                                                                 |
+|  @F1@ |  1970-11-29 |     NA     |    @I6@    |    Samuel /Venzon/   |   @I1@  |   Willodean /Malagon/ |                                                                    @I7@,@I13@                                                                   |
 |  @F2@ |  1947-11-22 |     NA     |    @I2@    |   Stephan /Malagon/  |   @I3@  |   Laverna /Leonhardt/ |                                                               @I1@,@I4@,@I5@,@I14@                                                              |
 |  @F3@ |   1925-4-28 |     NA     |    @I16@   |   Johnny /Malagon/   |   @I17@ |      Lura /Lomas/     |  @I2@,@I18@,@I20@,@I21@,@I22@,@I23@,@I24@,@I25@,@I26@,@I27@,@I28@,@I29@,@I30@,@I31@,@I32@,@I33@,@I45@,@I48@,@I56@,@I58@,@I59@,@I62@,@I65@,@I66@ |
 |  @F4@ |      NA     |     NA     |    @I4@    |     Ken /Malagon/    |   @I20@ |    Lucile /Malagon/   |                                                                        NA                                                                       |
@@ -103,7 +103,7 @@ Families Table
 | @F22@ |      NA     |     NA     |    @I30@   |    Chet /Malagon/    |    NA   |           NA          |                                                                       @I42@                                                                     |
 | @F24@ |      NA     |     NA     |    @I45@   |    Otto /Malagon/    |    NA   |           NA          |                                                                       @I46@                                                                     |
 | @F23@ |   2006-8-15 |     NA     |    @I45@   |    Otto /Malagon/    |   @I46@ |     Ezer /Malagon/    |                                                                        NA                                                                       |
-| @F25@ |   2007-8-3  |     NA     |    @I48@   |    Janka /Malagon/   |   @I49@ |      Regena /Ùna/    |                                                        @I50@,@I51@,@I52@,@I53@,@I54@,@I55@                                                      |
+| @F25@ |   2007-8-3  |     NA     |    @I48@   |    Janka /Malagon/   |   @I49@ |      Regena /Ùna/     |                                                        @I50@,@I51@,@I52@,@I53@,@I54@,@I55@                                                      |
 | @F26@ |   2010-4-3  |     NA     |    @I56@   |  Chinweuba /Malagon/ |   @I57@ |       Mona /Edda/     |                                                                    @I69@,@I70@                                                                  |
 | @F27@ |   2008-5-1  |     NA     |    @I60@   |   Arslan /Edgardo/   |   @I58@ |      Efa /Malagon/    |                                                                        NA                                                                       |
 | @F28@ |   2008-5-1  |     NA     |    @I61@   |   Arslan /Edgardo/   |   @I59@ |      Efa /Malagon/    |                                                                        NA                                                                       |
@@ -113,6 +113,8 @@ Families Table
 
 US28: List siblings by decreasing age
 +-----Family @F1@-----+
+Individual:@I7@, Age:46 
+Individual:@I13@, Age:44 
 +-----Family @F3@-----+
 Individual:@I18@, Age:200 
 Individual:@I22@, Age:96 
@@ -134,10 +136,10 @@ Individual:@I56@, Age:31
 Individual:@I58@, Age:31 
 Individual:@I59@, Age:30 
 Individual:@I65@, Age:29 
-Individual:@I25@, Age:20 
 Individual:@I66@, Age:20 
+Individual:@I25@, Age:19 
 Individual:@I23@, Age:1 
-Individual:@I21@, Age:-1 
+Individual:@I21@, Age:-2 
 +-----Family @F5@-----+
 Individual:@I10@, Age:42 
 +-----Family @F7@-----+
@@ -175,13 +177,13 @@ US29: Deceased People Table
 +-------+-----------------------+--------+-------------+------+--------+-------------+
 |   ID  |          Name         | Gender |   Birthday  | Age  | Alive  |    Death    |
 +-------+-----------------------+--------+-------------+------+--------+-------------+
-|  @I5@ |     Josh /Malagon/    |    M   |  1964-10-31 |  20  |  False |   1984-5-7  |
-| @I14@ |     Jacob /Malagon/   |    M   |   1970-11-8 |  18  |  False |   1988-9-29 |
-| @I15@ |   Jaqueline /Kindel/  |    F   |   1969-9-8  |  18  |  False |   1987-7-6  |
+|  @I5@ |     Josh /Malagon/    |    M   |  1964-10-31 |  19  |  False |   1984-5-7  |
+| @I14@ |     Jacob /Malagon/   |    M   |   1970-11-8 |  17  |  False |   1988-9-29 |
+| @I15@ |   Jaqueline /Kindel/  |    F   |   1969-9-8  |  17  |  False |   1987-7-6  |
 | @I18@ |     Tesha /Malagon/   |    F   |   1819-7-8  |  200 |  False |   2019-8-2  |
-| @I21@ |      Regena /Ali/     |    F   |   1820-10-8 |  -1  |  False |   1819-3-3  |
+| @I21@ |      Regena /Ali/     |    F   |   1820-10-8 |  -2  |  False |   1819-3-3  |
 | @I23@ |    Vonnie /Malagon/   |    M   |   1936-3-10 |   1  |  False |   1937-7-6  |
-| @I25@ |    Hailey /Malagon/   |    F   |   1938-10-8 |  20  |  False |   1958-9-18 |
+| @I25@ |    Hailey /Malagon/   |    F   |   1938-10-8 |  19  |  False |   1958-9-18 |
 | @I66@ |   Djuradja /Malagon/  |    M   |   1990-9-10 |  20  |  False |  2010-11-10 |
 | @I67@ |  Josefin /Parthenope/ |    F   |   1990-9-10 |  20  |  False |  2010-10-10 |
 +-------+-----------------------+--------+-------------+------+--------+-------------+
@@ -224,7 +226,7 @@ US30: Living & Married People Table
 | @I45@ |    Otto /Malagon/    |    M   |   1986-8-8  |  33  |  True |   NA  |     @F23@,@F24@    |
 | @I46@ |    Hacer /Heitor/    |    F   |   1985-9-8  |  34  |  True |   NA  |        @F23@       |
 | @I48@ |    Janka /Malagon/   |    M   |   1987-8-7  |  32  |  True |   NA  |        @F25@       |
-| @I49@ |     Regena /Ùna/    |    F   |   1986-8-7  |  33  |  True |   NA  |        @F25@       |
+| @I49@ |     Regena /Ùna/     |    F   |   1986-8-7  |  33  |  True |   NA  |        @F25@       |
 | @I56@ |  Chinweuba /Malagon/ |    M   |   1988-5-7  |  31  |  True |   NA  |        @F26@       |
 | @I57@ |      Mona /Edda/     |    F   |   1986-8-8  |  33  |  True |   NA  |        @F26@       |
 | @I58@ |     Efa /Malagon/    |    F   |   1988-8-14 |  31  |  True |   NA  |        @F27@       |
@@ -256,13 +258,13 @@ US33: Orphaned Children
 +-------+-----------------------+--------+-----------+-----+-------+-------+--------+
 
 US35 List Recent Births Table
-+-------+----------------------+--------+-------------+-----+-------+-------+--------+
-|   ID  |         Name         | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+-------+----------------------+--------+-------------+-----+-------+-------+--------+
++-------+---------------------+--------+-------------+-----+-------+-------+--------+
+|   ID  |         Name        | Gender |   Birthday  | Age | Alive | Death | Spouse |
++-------+---------------------+--------+-------------+-----+-------+-------+--------+
 | @I69@ |  Brünhild /Malagon/ |    M   |   2019-11-8 |   0 |  True |   NA  |   NA   |
-| @I70@ |     Kennet /Edda/    |    F   |   2019-11-7 |   0 |  True |   NA  |   NA   |
-| @I71@ |    Louis /Venzon/    |    M   |  2019-10-29 |   0 |  True |   NA  |   NA   |
-+-------+----------------------+--------+-------------+-----+-------+-------+--------+
+| @I70@ |     Kennet /Edda/   |    F   |   2019-11-7 |   0 |  True |   NA  |   NA   |
+| @I71@ |    Louis /Venzon/   |    M   |  2019-10-29 |   0 |  True |   NA  |   NA   |
++-------+---------------------+--------+-------------+-----+-------+-------+--------+
 
 US38 List Upcoming Birthdays Table
 +-------+--------------------+--------+-------------+-----+-------+-------+--------------------+
@@ -277,18 +279,16 @@ US39: List Upcoming Anniversaries Table
 +------+-------------+------------+--------------------+---------+----------------------+
 |  ID  |   Married   | Husband ID |    Husband Name    | Wife ID |      Wife Name       |
 +------+-------------+------------+--------------------+---------+----------------------+
-| @F1@ |  1970-11-29 |     NA     |         NA         |    NA   |          NA          |
+| @F1@ |  1970-11-29 |    @I6@    |   Samuel /Venzon/  |   @I1@  |  Willodean /Malagon/ |
 | @F2@ |  1947-11-22 |    @I2@    |  Stephan /Malagon/ |   @I3@  |  Laverna /Leonhardt/ |
 +------+-------------+------------+--------------------+---------+----------------------+
 
 ------error messages------
 ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
 ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
+ERROR: INDIVIDUAL: US27: 25: @I1@: Person does not have birth date when caculating age
 ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
 ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
 ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
 ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
 ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
@@ -300,296 +300,7 @@ ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
 ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
 ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
 ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
+ERROR: INDIVIDUAL: US10: 20: @I1@: Wife of family @F1@: has no Birth Date
 ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
 ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
 ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
@@ -637,176 +348,7 @@ ERROR: INDIVIDUAL: US13: 554: Child @I56@ is born within 8 months and more than 
 ERROR: INDIVIDUAL: US13: 573: Child @I58@ is born within 8 months and more than 2 days of sibling
 ERROR: FAMILY: US21: 102: @I9@: Is Husband and has Sex as Female
 ERROR: INDIVIDUAL: US23: 14: @I1@: Willodean /Malagon/: Individuals have no birth date 
-ERROR: FAMILY: US28: 14: Child @I1@ has no age
-ERROR: INDIVIDUAL: US30: 55: @I5@: Deceased Person is married to Person @F5@
-ERROR: INDIVIDUAL: US30: 144: @I14@: Deceased Person is married to Person @F10@
-ERROR: INDIVIDUAL: US30: 156: @I15@: Deceased Person is married to Person @F10@
-ERROR: INDIVIDUAL: US30: 258: @I25@: Deceased Person is married to Person @F14@
-ERROR: INDIVIDUAL: US30: 648: @I66@: Deceased Person is married to Person @F30@
-ERROR: INDIVIDUAL: US30: 660: @I67@: Deceased Person is married to Person @F30@
-ERROR: INDIVIDUAL: US33: 14: Orphaned child @I1@ does not have age!
-ERROR: INDIVIDUAL: US33: 125: Orphaned child @I12@ does not have a family ID!
-ERROR: INDIVIDUAL: US35: 20: Person NA does not have birthday!
-ERROR: INDIVIDUAL: US38: 20: Person NA does not have birthday!
-ERROR: FAMILY: US39: 767: @F4@: Family does not have married date!
-ERROR: FAMILY: US39: 791: @F8@: Family does not have married date!
-ERROR: FAMILY: US39: 794: @F6@: Family does not have married date!
-ERROR: FAMILY: US39: 817: @F11@: Family does not have married date!
-ERROR: FAMILY: US39: 848: @F15@: Family does not have married date!
-ERROR: FAMILY: US39: 895: @F22@: Family does not have married date!
-ERROR: FAMILY: US39: 898: @F24@: Family does not have married date!
-ERROR: FAMILY: US39: 946: @F30@: Family does not have married date!
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US13: 280: Child @I27@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 292: Child @I28@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 301: Child @I29@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 311: Child @I30@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 554: Child @I56@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 573: Child @I58@ is born within 8 months and more than 2 days of sibling
-ERROR: FAMILY: US21: 102: @I9@: Is Husband and has Sex as Female
-ERROR: INDIVIDUAL: US23: 14: @I1@: Willodean /Malagon/: Individuals have no birth date 
-ERROR: FAMILY: US28: 14: Child @I1@ has no age
-ERROR: INDIVIDUAL: US30: 55: @I5@: Deceased Person is married to Person @F5@
-ERROR: INDIVIDUAL: US30: 144: @I14@: Deceased Person is married to Person @F10@
-ERROR: INDIVIDUAL: US30: 156: @I15@: Deceased Person is married to Person @F10@
-ERROR: INDIVIDUAL: US30: 258: @I25@: Deceased Person is married to Person @F14@
-ERROR: INDIVIDUAL: US30: 648: @I66@: Deceased Person is married to Person @F30@
-ERROR: INDIVIDUAL: US30: 660: @I67@: Deceased Person is married to Person @F30@
-ERROR: INDIVIDUAL: US33: 14: Orphaned child @I1@ does not have age!
-ERROR: INDIVIDUAL: US33: 125: Orphaned child @I12@ does not have a family ID!
-ERROR: INDIVIDUAL: US35: 20: Person NA does not have birthday!
-ERROR: INDIVIDUAL: US38: 20: Person NA does not have birthday!
-ERROR: FAMILY: US39: 767: @F4@: Family does not have married date!
-ERROR: FAMILY: US39: 791: @F8@: Family does not have married date!
-ERROR: FAMILY: US39: 794: @F6@: Family does not have married date!
-ERROR: FAMILY: US39: 817: @F11@: Family does not have married date!
-ERROR: FAMILY: US39: 848: @F15@: Family does not have married date!
-ERROR: FAMILY: US39: 895: @F22@: Family does not have married date!
-ERROR: FAMILY: US39: 898: @F24@: Family does not have married date!
-ERROR: FAMILY: US39: 946: @F30@: Family does not have married date!
-ERROR: INDIVIDUAL: US42: 21: @I1@: BIRT Date is Invalid 1958-7-96
-ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
-ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
-ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid husband ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid wife ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
-ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
-ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
-ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
-ERROR: INDIVIDUAL: US02: 811: @I15@: Person has marriage date 1968-6-4 before birth date 1969-9-8
-ERROR: INDIVIDUAL: US03: @I1@: Individual has no Birth Date
-ERROR: INDIVIDUAL: US03: @I21@: Individual has Birth date 1820-10-8 after Death Date 1819-3-3
-ERROR: FAMILY: US06: 814: @F10@: Divorce 1990-7-12 happened after the death of both spouses - Husband: 1988-9-29 Wife: 1987-7-6.
-ERROR: INDIVIDUAL: US07: 20: @I1@: Person has no Birthday
-ERROR: INDIVIDUAL: US08: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 20: Child @I1@: has no Birthday
-ERROR: INDIVIDUAL: US09: 713: @I72@: Child was born at 1960-9-9 after death of mother 1958-9-18
-ERROR: INDIVIDUAL: US10: 51: @I4@: Husband of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 211: @I20@: Wife of family @F4@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 92: @I8@: Wife of family @F8@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 82: @I7@: Husband of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 131: @I12@: Wife of family @F6@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 232: @I22@: Husband of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 329: @I31@: Wife of family @F11@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 276: @I26@: Husband of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 385: @I37@: Wife of family @F15@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 317: @I30@: Husband of family @F22@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 458: @I45@: Husband of family @F24@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 654: @I66@: Husband of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US10: 666: @I67@: Wife of family @F30@: has no Birth Date
-ERROR: INDIVIDUAL: US12: 14: Child @I1@ has no Birthday.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 68 older than the child @I5@.
-ERROR: FAMILY: US12: 36: @F2@: Wife is 70 older than the child @I14@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 120 older than the child @I21@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 121 older than the child @I21@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 117 older than the child @I23@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 118 older than the child @I23@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 99 older than the child @I25@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 100 older than the child @I25@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 84 older than the child @I33@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 85 older than the child @I33@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 85 older than the child @I45@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 86 older than the child @I45@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 86 older than the child @I48@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 87 older than the child @I48@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I56@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I56@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 87 older than the child @I58@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 88 older than the child @I58@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 88 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 89 older than the child @I59@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 77 older than the child @I62@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 89 older than the child @I65@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 90 older than the child @I65@.
-ERROR: INDIVIDUAL: US12: 167: @F3@: Father is 98 older than the child @I66@.
-ERROR: FAMILY: US12: 176: @F3@: Wife is 99 older than the child @I66@.
-ERROR: INDIVIDUAL: US13: 280: Child @I27@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 292: Child @I28@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 301: Child @I29@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 311: Child @I30@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 554: Child @I56@ is born within 8 months and more than 2 days of sibling
-ERROR: INDIVIDUAL: US13: 573: Child @I58@ is born within 8 months and more than 2 days of sibling
-ERROR: FAMILY: US21: 102: @I9@: Is Husband and has Sex as Female
-ERROR: INDIVIDUAL: US23: 14: @I1@: Willodean /Malagon/: Individuals have no birth date 
+ERROR: FAMILY: US26: 898: @I46@: Child id does not match with family id in individuals spouse entry
 ERROR: FAMILY: US28: 14: Child @I1@ has no age
 ERROR: INDIVIDUAL: US30: 55: @I5@: Deceased Person is married to Person @F5@
 ERROR: INDIVIDUAL: US30: 144: @I14@: Deceased Person is married to Person @F10@
@@ -836,86 +378,7 @@ ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marria
 ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
 ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
 ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
+ANOMALY: INDIVIDUAL: US10: 73: @I6@: Husband of family @F1@ is younger than 14 years old - Birth Date 1958-12-6
 ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
 ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
 ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
@@ -925,13 +388,16 @@ ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 1
 ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
 ANOMALY: FAMILY: US14: 907: @F25@: Family has more than 5 siblings with same birthdate
 ANOMALY: FAMILY: US15: 736: @F3@: Family has 24 siblings which is more than 15 siblings
+ANOMALY: INDIVIDUAL: US16: 77: @I7@: Individual has different last name Vezon than family Venzon
 ANOMALY: INDIVIDUAL: US16: 117: @I11@: Individual has different last name Tung than family Finklea
 ANOMALY: INDIVIDUAL: US16: 197: @I19@: Individual has different last name Iglesias than family Finklea
 ANOMALY: INDIVIDUAL: US16: 699: @I71@: Individual has different last name Venzon than family Malagon
 ANOMALY: INDIVIDUAL: US17: 902: @I45@: Individual married to child @I46@
 ANOMALY: INDIVIDUAL: US18: 226: @I22@: Individual married to sibling @I31@
 ANOMALY: INDIVIDUAL: US18: 323: @I31@: Individual married to sibling @I22@
-ANOMALY: FAMILY: US20: 717: @F1@: Person NA should not marry person NA
+ANOMALY: INDIVIDUAL: US19: 106: @I10@: Individual married to cousin @I13@
+ANOMALY: INDIVIDUAL: US19: 134: @I13@: Individual married to cousin @I10@
+ANOMALY: FAMILY: US20: 769: @F4@: Person @I20@ should not marry person @I4@
 ANOMALY: INDIVIDUAL: US23: 360: @I35@: @I31@: Individuals have the same name Sock /Malagon/ and birth date 1955-10-17
 ANOMALY: FAMILY: US24: 933: @F28@: Family contains same husband, wife and marriage date as another family
 ANOMALY: INDIVIDUAL: US25: 821: @I35@: @I31@: Individuals share the same first name Sock /Malagon/ and birth date 1955-10-17 from family @F12@
@@ -956,116 +422,62 @@ ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the 
 ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
 ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
 ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
+ANOMALY: FAMILY: US34: 716: @F1@: One of the spouses or both have no age value
 ANOMALY: FAMILY: US34: 771: @F5@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 791: @F8@: One of the spouses or both have no age value
 ANOMALY: FAMILY: US34: 794: @F6@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 841: @F14@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 848: @F15@: Family has a large spouse age difference
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: FAMILY: US14: 907: @F25@: Family has more than 5 siblings with same birthdate
-ANOMALY: FAMILY: US15: 736: @F3@: Family has 24 siblings which is more than 15 siblings
-ANOMALY: INDIVIDUAL: US16: 117: @I11@: Individual has different last name Tung than family Finklea
-ANOMALY: INDIVIDUAL: US16: 197: @I19@: Individual has different last name Iglesias than family Finklea
-ANOMALY: INDIVIDUAL: US16: 699: @I71@: Individual has different last name Venzon than family Malagon
-ANOMALY: INDIVIDUAL: US17: 902: @I45@: Individual married to child @I46@
-ANOMALY: INDIVIDUAL: US18: 226: @I22@: Individual married to sibling @I31@
-ANOMALY: INDIVIDUAL: US18: 323: @I31@: Individual married to sibling @I22@
-ANOMALY: FAMILY: US20: 717: @F1@: Person NA should not marry person NA
-ANOMALY: INDIVIDUAL: US23: 360: @I35@: @I31@: Individuals have the same name Sock /Malagon/ and birth date 1955-10-17
-ANOMALY: FAMILY: US24: 933: @F28@: Family contains same husband, wife and marriage date as another family
-ANOMALY: INDIVIDUAL: US25: 821: @I35@: @I31@: Individuals share the same first name Sock /Malagon/ and birth date 1955-10-17 from family @F12@
-ANOMALY: FAMILY: US28: 767: Family @F4@ has no children
-ANOMALY: FAMILY: US28: 791: Family @F8@ has no children
-ANOMALY: FAMILY: US28: 794: Family @F6@ has no children
-ANOMALY: FAMILY: US28: 808: Family @F10@ has no children
-ANOMALY: FAMILY: US28: 817: Family @F11@ has no children
-ANOMALY: FAMILY: US28: 848: Family @F15@ has no children
-ANOMALY: FAMILY: US28: 852: Family @F16@ has no children
-ANOMALY: FAMILY: US28: 858: Family @F17@ has no children
-ANOMALY: FAMILY: US28: 867: Family @F18@ has no children
-ANOMALY: FAMILY: US28: 875: Family @F19@ has no children
-ANOMALY: FAMILY: US28: 881: Family @F20@ has no children
-ANOMALY: FAMILY: US28: 887: Family @F21@ has no children
-ANOMALY: FAMILY: US28: 901: Family @F23@ has no children
-ANOMALY: FAMILY: US28: 927: Family @F27@ has no children
-ANOMALY: FAMILY: US28: 933: Family @F28@ has no children
-ANOMALY: FAMILY: US32: 782: @F7@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US34: 771: @F5@: Family has a large spouse age difference
-ANOMALY: FAMILY: US34: 791: @F8@: One of the spouses or both have no age value
-ANOMALY: FAMILY: US34: 794: @F6@: Family has a large spouse age difference
-ANOMALY: FAMILY: US34: 841: @F14@: Family has a large spouse age difference
-ANOMALY: FAMILY: US34: 848: @F15@: Family has a large spouse age difference
-ANOMALY: INDIVIDUAL: US04: 835: @I24@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US04: 835: @I36@: Marriage Before Divorce - Marriage Date 1958-5-5 - Divorce Date 1955-10-9
-ANOMALY: INDIVIDUAL: US05: 845: @I25@: Marriage Before Death - Marriage Date 1959-5-4 - Death Date 1958-9-18
-ANOMALY: INDIVIDUAL: US07: 191: @I18@: More than 150 years old at death - Birth Date 1819-7-8: Death Date 2019-8-2
-ANOMALY: INDIVIDUAL: US08: 191: @I18@: Child was born at 1819-7-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 221: @I21@: Child was born at 1820-10-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 232: @I22@: Child was born at 1923-5-8 before marriage of parents 1925-4-28
-ANOMALY: INDIVIDUAL: US08: 112: @I10@: Child was born at 1977-9-8 before marriage of parents 1978-9-2
-ANOMALY: INDIVIDUAL: US08: 385: @I37@: Child was born at 1980-9-9 after 9 month divorce of parents 1955-10-9
-ANOMALY: INDIVIDUAL: US10: 61: @I5@: Husband of family @F5@ is younger than 14 years old - Birth Date 1964-10-31
-ANOMALY: INDIVIDUAL: US10: 92: @I8@: Wife of family @F5@ is younger than 14 years old - Birth Date 1966-8-8
-ANOMALY: INDIVIDUAL: US10: 112: @I10@: Husband of family @F9@ is younger than 14 years old - Birth Date 1977-9-8
-ANOMALY: INDIVIDUAL: US10: 150: @I14@: Husband of family @F10@ is younger than 14 years old - Birth Date 1970-11-8
-ANOMALY: INDIVIDUAL: US10: 162: @I15@: Wife of family @F10@ is younger than 14 years old - Birth Date 1969-9-8
-ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 14 years old - Birth Date 1950-9-9
-ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
-ANOMALY: FAMILY: US14: 907: @F25@: Family has more than 5 siblings with same birthdate
-ANOMALY: FAMILY: US15: 736: @F3@: Family has 24 siblings which is more than 15 siblings
-ANOMALY: INDIVIDUAL: US16: 117: @I11@: Individual has different last name Tung than family Finklea
-ANOMALY: INDIVIDUAL: US16: 197: @I19@: Individual has different last name Iglesias than family Finklea
-ANOMALY: INDIVIDUAL: US16: 699: @I71@: Individual has different last name Venzon than family Malagon
-ANOMALY: INDIVIDUAL: US17: 902: @I45@: Individual married to child @I46@
-ANOMALY: INDIVIDUAL: US18: 226: @I22@: Individual married to sibling @I31@
-ANOMALY: INDIVIDUAL: US18: 323: @I31@: Individual married to sibling @I22@
-ANOMALY: FAMILY: US20: 717: @F1@: Person NA should not marry person NA
-ANOMALY: INDIVIDUAL: US23: 360: @I35@: @I31@: Individuals have the same name Sock /Malagon/ and birth date 1955-10-17
-ANOMALY: FAMILY: US24: 933: @F28@: Family contains same husband, wife and marriage date as another family
-ANOMALY: INDIVIDUAL: US25: 821: @I35@: @I31@: Individuals share the same first name Sock /Malagon/ and birth date 1955-10-17 from family @F12@
-ANOMALY: FAMILY: US28: 767: Family @F4@ has no children
-ANOMALY: FAMILY: US28: 791: Family @F8@ has no children
-ANOMALY: FAMILY: US28: 794: Family @F6@ has no children
-ANOMALY: FAMILY: US28: 808: Family @F10@ has no children
-ANOMALY: FAMILY: US28: 817: Family @F11@ has no children
-ANOMALY: FAMILY: US28: 848: Family @F15@ has no children
-ANOMALY: FAMILY: US28: 852: Family @F16@ has no children
-ANOMALY: FAMILY: US28: 858: Family @F17@ has no children
-ANOMALY: FAMILY: US28: 867: Family @F18@ has no children
-ANOMALY: FAMILY: US28: 875: Family @F19@ has no children
-ANOMALY: FAMILY: US28: 881: Family @F20@ has no children
-ANOMALY: FAMILY: US28: 887: Family @F21@ has no children
-ANOMALY: FAMILY: US28: 901: Family @F23@ has no children
-ANOMALY: FAMILY: US28: 927: Family @F27@ has no children
-ANOMALY: FAMILY: US28: 933: Family @F28@ has no children
-ANOMALY: FAMILY: US32: 782: @F7@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US32: 907: @F25@: The two or more individuals were born at the same time
-ANOMALY: FAMILY: US34: 771: @F5@: Family has a large spouse age difference
-ANOMALY: FAMILY: US34: 791: @F8@: One of the spouses or both have no age value
-ANOMALY: FAMILY: US34: 794: @F6@: Family has a large spouse age difference
-ANOMALY: FAMILY: US34: 841: @F14@: Family has a large spouse age difference
-ANOMALY: FAMILY: US34: 848: @F15@: Family has a large spouse age difference
+US33: Orphaned Children
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+
+US33: Orphaned Children
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+|  @I3@ |     Hodia /Christos/    |    M   |  2004-9-7  |  15 |  True |   NA  |   NA   |
+| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
++-------+-------------------------+--------+------------+-----+-------+-------+--------+
+
+US28: List siblings by decreasing age
++-----End of US28-----+
+
+US28: List siblings by decreasing age
++-----Family @F1@-----+
+Individual:@I7@, Age:46 
+Individual:@I13@, Age:44 
++-----End of US28-----+
+
+US31: Unmarried people over 30
++------+---------------------+--------+-----------+-----+-------+-------+--------+
+|  ID  |         Name        | Gender |  Birthday | Age | Alive | Death | Spouse |
++------+---------------------+--------+-----------+-----+-------+-------+--------+
+| @I6@ |  IsaÃ­as /Christos/ |    F   |  1950-9-8 |  69 |  True |   NA  |   NA   |
+| @I7@ |   Gunni /Christos/  |    M   |  1949-9-8 |  70 |  True |   NA  |   NA   |
++------+---------------------+--------+-----------+-----+-------+-------+--------+
+
+US39: List Upcoming Anniversaries Table
++------+-------------+------------+----------------+---------+---------------+
+|  ID  |   Married   | Husband ID |  Husband Name  | Wife ID |   Wife Name   |
++------+-------------+------------+----------------+---------+---------------+
+| @F1@ |  2019-11-22 |    @I2@    |  Johny /Chang/ |   @I3@  |  Nancy /Tsai/ |
++------+-------------+------------+----------------+---------+---------------+
+
+US38 List Upcoming Birthdays Table
++------+----------------+--------+-------------+-----+-------+-------+--------+
+|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+| @I2@ |  Johny /Chang/ |    M   |  1958-11-25 |  61 |  True |   NA  |  @F1@  |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+
+US38 List Upcoming Birthdays Table
++------+----------------+--------+-------------+-----+-------+-------+--------+
+|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+| @I1@ |  David /Chang/ |    M   |  2019-11-22 |  31 |  True |   NA  |   NA   |
++------+----------------+--------+-------------+-----+-------+-------+--------+
+

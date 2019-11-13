@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
-# In[230]:
+# In[1]:
 
 
 import pytest
@@ -13,7 +13,7 @@ from datetime import datetime
 from datetime import timedelta
 
 
-# In[231]:
+# In[2]:
 
 
 def test_include_partial_dates():
@@ -26,7 +26,18 @@ def test_include_partial_dates():
     return Project.individuals['@I1@']["BIRT"]=="1587-1-1" and Project.individuals['@I3@']["BIRT"]=="1900-9-1" and Project.family_dic['@F1@']["MARR"]=="1600-1-1" and Project.error_array==['ERROR: INDIVIDUAL: US41: 21: @I1@: Invalid month format!'] 
 
 
-# In[232]:
+# In[3]:
+
+
+def test_include_individual_ages():
+    Project.error_array = []
+    Project.individuals = None
+    Project.document = Project.read_in("./Romeo_Juliet_Family3.ged")
+    Project.create_individuals_map()
+    return Project.error_array[1]=='ERROR: INDIVIDUAL: US27: 24: @I1@: Person does not have birth date when caculating age' and Project.individuals['@I2@']["AGE"]=="59"
+
+
+# In[4]:
 
 
 def test_divorce_before_death_fail():
@@ -117,7 +128,7 @@ def test_divorce_before_death_fail():
     return Project.error_array==['ERROR: FAMILY: US06: 530: @F1@: Divorce 1971-7-7 happened after the death of husband 1971-7-1.']
 
 
-# In[233]:
+# In[5]:
 
 
 def test_divorce_before_death_pass():
@@ -208,7 +219,7 @@ def test_divorce_before_death_pass():
     return len(Project.error_array)==0
 
 
-# In[234]:
+# In[6]:
 
 
 def test_parents_not_too_old_fail():
@@ -300,7 +311,7 @@ def test_parents_not_too_old_fail():
  'ERROR: FAMILY: US12: 14: @F1@: Wife is 65 older than the child @I7@.']
 
 
-# In[235]:
+# In[7]:
 
 
 def test_parents_not_too_old_pass():
@@ -391,7 +402,7 @@ def test_parents_not_too_old_pass():
     return len(Project.error_array)==0
 
 
-# In[236]:
+# In[8]:
 
 
 # US03 - Happy Path Test Case
@@ -422,7 +433,7 @@ def test_is_birth_before_death():
     return len(Project.error_array) == 0
 
 
-# In[237]:
+# In[9]:
 
 
 #US03 - Sad Path Test Case
@@ -455,7 +466,7 @@ def test_is_birth_before_death_fail():
     return Project.error_array==['ERROR: INDIVIDUAL: US03: @I1@: Individual has Birth date 1975-7-7 after Death Date 1974-6-20']
 
 
-# In[238]:
+# In[10]:
 
 
 # US04 - Happy Path Test Case
@@ -568,7 +579,7 @@ def test_is_marriage_after_divorce():
     return len(Project.anomaly_array) == 0
 
 
-# In[239]:
+# In[11]:
 
 
 # US04 - Sad Path Test Case 
@@ -680,7 +691,7 @@ def test_is_marriage_after_divorce_error():
     return Project.anomaly_array[0] == "ANOMALY: INDIVIDUAL: US04: 438: @I1@: Marriage Before Divorce - Marriage Date 1970-7-7 - Divorce Date 1969-7-7"
 
 
-# In[240]:
+# In[12]:
 
 
 # US05 - Happy Path Test Case
@@ -793,7 +804,7 @@ def test_is_marriage_after_death():
     return True
 
 
-# In[241]:
+# In[13]:
 
 
 # US05 - Sad Path Test Case
@@ -905,7 +916,7 @@ def test_is_marriage_after_death_error():
     return True
 
 
-# In[242]:
+# In[14]:
 
 
 def test_death_before_marriage_fail():
@@ -967,7 +978,7 @@ def test_death_before_marriage_fail():
  'ANOMALY: INDIVIDUAL: US08: 200: @I13@: Child was born at 1981-9-8 after 9 month divorce of parents 1980-12-1']
 
 
-# In[243]:
+# In[15]:
 
 
 def test_death_before_marriage_pass():
@@ -1026,7 +1037,7 @@ def test_death_before_marriage_pass():
     return len(Project.anomaly_array)==0
 
 
-# In[244]:
+# In[16]:
 
 
 def test_birth_before_death_fail():
@@ -1089,7 +1100,7 @@ def test_birth_before_death_fail():
  'ERROR: INDIVIDUAL: US09: 200: @I13@: Child was born at 1989-7-8 after 9 month death of father 1988-10-6']
 
 
-# In[245]:
+# In[17]:
 
 
 def test_birth_before_death_pass():
@@ -1148,7 +1159,7 @@ def test_birth_before_death_pass():
     return len(Project.error_array)==0
 
 
-# In[246]:
+# In[18]:
 
 
 def test_dates_pass():
@@ -1191,7 +1202,7 @@ def test_dates_pass():
     return len(Project.error_array)==0
 
 
-# In[247]:
+# In[19]:
 
 
 def test_dates_error():
@@ -1241,7 +1252,7 @@ def test_dates_error():
                                  'ERROR: INDIVIDUAL: US01: 200: @I2@: Individual has death date 2020-6-2 later than today']
 
 
-# In[248]:
+# In[20]:
 
 
 def test_dates_pass():
@@ -1275,7 +1286,7 @@ def test_dates_pass():
     return len(Project.error_array)==0
 
 
-# In[249]:
+# In[21]:
 
 
 def test_birth_before_marraige_do_nothing():
@@ -1288,7 +1299,7 @@ def test_birth_before_marraige_do_nothing():
     return len(Project.error_array) == 0
 
 
-# In[250]:
+# In[22]:
 
 
 def test_birth_after_marraige_appended_to_error():
@@ -1302,7 +1313,7 @@ def test_birth_after_marraige_appended_to_error():
     return True
 
 
-# In[251]:
+# In[23]:
 
 
 def test_not_legal_marriage():
@@ -1344,7 +1355,7 @@ def test_not_legal_marriage():
 'ANOMALY: INDIVIDUAL: US10: 200: @I13@: Wife of family @F8@ is younger than 14 years old - Birth Date 1980-7-10']
 
 
-# In[252]:
+# In[24]:
 
 
 def test_legal_marriage():
@@ -1383,7 +1394,7 @@ def test_legal_marriage():
     return len(Project.anomaly_array) == 0
 
 
-# In[253]:
+# In[25]:
 
 
 def test_over_age_150():
@@ -1415,7 +1426,7 @@ def test_over_age_150():
  'ANOMALY: INDIVIDUAL: US07: 230: @I2@: More than 150 years old at death - Birth Date 1850-12-10: Death Date 2009-6-2']
 
 
-# In[254]:
+# In[26]:
 
 
 def test_less_age_150():
@@ -1445,7 +1456,7 @@ def test_less_age_150():
     return len(Project.anomaly_array) == 0
 
 
-# In[255]:
+# In[27]:
 
 
 #US28 List siblings in families by decreasing age, i.e. oldest siblings first
@@ -1460,7 +1471,7 @@ def test_list_siblings_by_age_success():
     return result == 0
 
 
-# In[256]:
+# In[28]:
 
 
 #US28 List siblings in families by decreasing age, i.e. oldest siblings first
@@ -1475,7 +1486,7 @@ def test_list_siblings_by_age_fail():
     return result != 0
 
 
-# In[257]:
+# In[29]:
 
 
 # User_Story_29: List all deceased individuals in a GEDCOM file
@@ -1491,7 +1502,7 @@ def test_list_deceased_individuals_success(mock_printTable):
     return True
 
 
-# In[258]:
+# In[30]:
 
 
 # User_Story_29: List all deceased individuals in a GEDCOM file
@@ -1506,7 +1517,7 @@ def test_list_deceased_individuals_error(mock_printTable):
     return mock_printTable.called == False
 
 
-# In[259]:
+# In[31]:
 
 
 # User_Story_30: List all living married people in a GEDCOM file
@@ -1523,7 +1534,7 @@ def test_list_living_married_individuals_success(mock_printTable):
     return True
 
 
-# In[260]:
+# In[32]:
 
 
 # User_Story_30: List all living married people in a GEDCOM file
@@ -1539,7 +1550,7 @@ def test_list_living_married_individuals_error(mock_printTable):
     return mock_printTable.called == False
 
 
-# In[261]:
+# In[33]:
 
 
 #User_Story_31: List all living people over 30 who have never been married in a GEDCOM file
@@ -1553,7 +1564,7 @@ def test_list_single_people_pass():
     return True
 
 
-# In[262]:
+# In[34]:
 
 
 #User_Story_31: List all living people over 30 who have never been married in a GEDCOM file
@@ -1567,7 +1578,7 @@ def test_list_single_people_fail():
     return True
 
 
-# In[263]:
+# In[35]:
 
 
 #User_Story_33: List all orphaned children (both parents dead and child < 18 years old) in a GEDCOM file
@@ -1583,7 +1594,7 @@ def test_list_orphan_pass():
     return True
 
 
-# In[264]:
+# In[36]:
 
 
 #User_Story_33: List all orphaned children (both parents dead and child < 18 years old) in a GEDCOM file
@@ -1599,7 +1610,7 @@ def test_list_orphan_fail():
     return True
 
 
-# In[265]:
+# In[37]:
 
 
 def test_more_than_15_siblings():
@@ -1612,7 +1623,7 @@ def test_more_than_15_siblings():
     return Project.anomaly_array[0] == 'ANOMALY: FAMILY: US15: 230: @F1@: Family has 17 siblings which is more than 15 siblings'
 
 
-# In[266]:
+# In[38]:
 
 
 def test_less_than_15_siblings():
@@ -1625,7 +1636,7 @@ def test_less_than_15_siblings():
     return len(Project.anomaly_array) == 0
 
 
-# In[267]:
+# In[39]:
 
 
 def test_different_male_last_name():
@@ -1637,7 +1648,7 @@ def test_different_male_last_name():
     return Project.anomaly_array[0] == 'ANOMALY: INDIVIDUAL: US16: 130: @I1@: Individual has different last name Bing than family Potter'
 
 
-# In[268]:
+# In[40]:
 
 
 def test_same_male_last_name():
@@ -1650,7 +1661,7 @@ def test_same_male_last_name():
     return len(Project.anomaly_array) == 0
 
 
-# In[269]:
+# In[41]:
 
 
 def test_unique_name_and_birth_error():
@@ -1692,7 +1703,7 @@ def test_unique_name_and_birth_error():
     return Project.anomaly_array==['ANOMALY: INDIVIDUAL: US23: 324: @I32@: @I30@: Individuals have the same name Chet /Malagon/ and birth date 1943-8-18']
 
 
-# In[270]:
+# In[42]:
 
 
 def test_unique_name_and_birth_pass():
@@ -1722,7 +1733,7 @@ def test_unique_name_and_birth_pass():
     return len(Project.anomaly_array)==0
 
 
-# In[271]:
+# In[43]:
 
 
 def test_unique_family_name_and_birth_error():
@@ -1823,7 +1834,7 @@ def test_unique_family_name_and_birth_error():
     return Project.anomaly_array==['ANOMALY: INDIVIDUAL: US25: 365: @I32@: @I30@: Individuals share the same first name Chet /Malagon/ and birth date 1943-8-18 from family @F3@']
 
 
-# In[272]:
+# In[44]:
 
 
 def test_unique_family_name_and_birth_pass():
@@ -1853,7 +1864,7 @@ def test_unique_family_name_and_birth_pass():
     return len(Project.anomaly_array) == 0
 
 
-# In[273]:
+# In[45]:
 
 
 # US20 Aunts and uncles - success
@@ -1868,7 +1879,7 @@ def aunts_and_uncles_success():
     return True
 
 
-# In[274]:
+# In[46]:
 
 
 # US20 Aunts and uncles - error
@@ -1881,7 +1892,7 @@ def aunts_and_uncles_error():
     return Project.is_uncle_aunt_marriage_legal() == False
 
 
-# In[275]:
+# In[47]:
 
 
 # US40 Include input line numbers
@@ -1915,7 +1926,7 @@ def input_line_numbers():
     return True
 
 
-# In[276]:
+# In[48]:
 
 
 def test_check_positive_for_bigamy():
@@ -1930,7 +1941,7 @@ def test_check_positive_for_bigamy():
     return Project.anomaly_array[0] == 'ANOMALY: INDIVIDUAL: US11: 10: @I1@: Performing bigamy'
 
 
-# In[277]:
+# In[49]:
 
 
 def test_check_negative_for_bigamy():
@@ -1945,7 +1956,7 @@ def test_check_negative_for_bigamy():
     return len(Project.anomaly_array) == 0
 
 
-# In[278]:
+# In[50]:
 
 
 def test_check_positive_parent_child_marriage():
@@ -1960,7 +1971,7 @@ def test_check_positive_parent_child_marriage():
     return Project.anomaly_array[0] == "ANOMALY: INDIVIDUAL: US17: 11: @I2@: Individual married to child @I3@"
 
 
-# In[279]:
+# In[51]:
 
 
 def test_check_negative_parent_child_marriage():
@@ -1975,7 +1986,7 @@ def test_check_negative_parent_child_marriage():
     return len(Project.anomaly_array) == 0
 
 
-# In[280]:
+# In[52]:
 
 
 def test_multiple_birth_pass():
@@ -2290,7 +2301,7 @@ def test_multiple_birth_pass():
     
 
 
-# In[281]:
+# In[53]:
 
 
 def test_multiple_birth_fail():
@@ -2359,7 +2370,7 @@ def test_multiple_birth_fail():
     return len(Project.anomaly_array) == 0
 
 
-# In[282]:
+# In[54]:
 
 
 def test_large_age_diff_pass():
@@ -2431,7 +2442,7 @@ def test_large_age_diff_pass():
     return Project.anomaly_array==['ANOMALY: FAMILY: US34: 388: @F4@: Family has a large spouse age difference']
 
 
-# In[283]:
+# In[55]:
 
 
 def test_large_age_diff_fail():
@@ -2488,7 +2499,7 @@ def test_large_age_diff_fail():
     return len(Project.anomaly_array) == 0
 
 
-# In[284]:
+# In[56]:
 
 
 # US35
@@ -2506,7 +2517,7 @@ def test_list_recent_births_pass():
     return Project.list_recent_births() == True
 
 
-# In[285]:
+# In[57]:
 
 
 def test_list_recent_births_fail():
@@ -2519,7 +2530,7 @@ def test_list_recent_births_fail():
     return Project.list_recent_births() == False
 
 
-# In[286]:
+# In[58]:
 
 
 # US38 Test tist upcoming birthdays
@@ -2538,7 +2549,7 @@ def test_list_upcoming_bday_pass():
     return True
 
 
-# In[287]:
+# In[59]:
 
 
 # US38 Test list upcoming birthdays
@@ -2550,7 +2561,7 @@ def test_list_upcoming_bday_fail():
     return Project.list_upcoming_bday() == False
 
 
-# In[288]:
+# In[60]:
 
 
 # US39 Test list upcoming birthdays
@@ -2570,7 +2581,7 @@ def test_list_upcoming_anni_pass():
     return True
 
 
-# In[289]:
+# In[61]:
 
 
 # US39 Test list upcoming birthdays
@@ -2582,7 +2593,7 @@ def test_list_upcoming_anni_fail():
     return Project.list_upcoming_anni() == False
 
 
-# In[290]:
+# In[62]:
 
 
 def test_check_sibling_spacing_1_month_apart():
@@ -2599,7 +2610,7 @@ def test_check_sibling_spacing_1_month_apart():
     return True
 
 
-# In[291]:
+# In[63]:
 
 
 def test_check_sibling_spacing_siblings_1_day_apart():
@@ -2617,7 +2628,7 @@ def test_check_sibling_spacing_siblings_1_day_apart():
     return True
 
 
-# In[292]:
+# In[64]:
 
 
 def test_check_sibling_marriage_married():
@@ -2636,7 +2647,7 @@ def test_check_sibling_marriage_married():
     return True
 
 
-# In[293]:
+# In[65]:
 
 
 def test_check_sibling_marriage_not_married():
@@ -2655,7 +2666,7 @@ def test_check_sibling_marriage_not_married():
     return True
 
 
-# In[294]:
+# In[66]:
 
 
 def test_check_cousin_marriage_pass():
@@ -2674,7 +2685,7 @@ def test_check_cousin_marriage_pass():
     return True
 
 
-# In[295]:
+# In[67]:
 
 
 def test_check_cousin_marriage_fail():
@@ -2690,7 +2701,7 @@ def test_check_cousin_marriage_fail():
     return len(Project.anomaly_array) == 0
 
 
-# In[296]:
+# In[68]:
 
 
 def test_unique_indi_and_family():
@@ -2703,7 +2714,7 @@ def test_unique_indi_and_family():
     return Project.error_array==['ERROR: INDIVIDUAL: US22: 51: Two or more Individuals @I1@: have the same ID', 'ERROR: FAMILY: US22: 62: Two or more families @F1@: have the same ID']
 
 
-# In[297]:
+# In[69]:
 
 
 def test_unique_family_by_spouses_positive_result():
@@ -2718,7 +2729,7 @@ def test_unique_family_by_spouses_positive_result():
     return True
 
 
-# In[298]:
+# In[70]:
 
 
 def test_unique_family_by_spouses_negative_result():
@@ -2733,7 +2744,7 @@ def test_unique_family_by_spouses_negative_result():
     return True
 
 
-# In[299]:
+# In[71]:
 
 
 def test_check_multiple_births_6_with_same_birthday():
@@ -2750,7 +2761,7 @@ def test_check_multiple_births_6_with_same_birthday():
     return True
 
 
-# In[300]:
+# In[72]:
 
 
 def test_check_multiple_births_4_with_same_birthday():
@@ -2767,7 +2778,7 @@ def test_check_multiple_births_4_with_same_birthday():
     return True
 
 
-# In[301]:
+# In[73]:
 
 
 def test_family_gender_fail():
@@ -2821,7 +2832,7 @@ def test_family_gender_fail():
     
 
 
-# In[302]:
+# In[74]:
 
 
 def test_family_gender_pass():
@@ -2875,7 +2886,7 @@ def test_family_gender_pass():
     
 
 
-# In[303]:
+# In[75]:
 
 
 def test_valid_dates_fail():
@@ -2901,7 +2912,7 @@ def test_valid_dates_fail():
     return Project.error_array == ['ERROR: FAMILY: US42: 466: @I1@: MARR Date is Invalid 1970-2-30']
 
 
-# In[304]:
+# In[76]:
 
 
 def test_valid_dates_pass():
@@ -2927,7 +2938,7 @@ def test_valid_dates_pass():
     return len(Project.error_array) == 0
 
 
-# In[ ]:
+# In[77]:
 
 
 def test_corresponding_entries_invalid_entries():
@@ -2943,7 +2954,7 @@ def test_corresponding_entries_invalid_entries():
     return True
 
 
-# In[ ]:
+# In[78]:
 
 
 def test_corresponding_entries_valid_entries():
@@ -2959,7 +2970,7 @@ def test_corresponding_entries_valid_entries():
     return True
 
 
-# In[305]:
+# In[79]:
 
 
 import unittest
@@ -3083,6 +3094,8 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue(test_check_cousin_marriage_pass())
     def test_check_cousin_marriage_fail(self):
         self.assertTrue(test_check_cousin_marriage_fail())
+    def test_include_individual_ages(self):
+        self.assertTrue(test_include_individual_ages())
         
     #Sprint 4 Test Cases
     def test_list_single_people_pass(self):
@@ -3126,10 +3139,4 @@ class TestStringMethods(unittest.TestCase):
         
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStringMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
-
-
-# In[ ]:
-
-
-
 
