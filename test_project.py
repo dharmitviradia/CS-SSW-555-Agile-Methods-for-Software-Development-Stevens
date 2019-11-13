@@ -2927,6 +2927,38 @@ def test_valid_dates_pass():
     return len(Project.error_array) == 0
 
 
+# In[ ]:
+
+
+def test_corresponding_entries_invalid_entries():
+    family_dic = {'@F1@': {'FAM_LINE': 1, 'HUSB': '@I1@', 'husband_object': {'SPOUSE': ['@F2@']}}}
+    
+    Project.family_dic = family_dic
+    Project.error_array = []
+    
+    Project.check_corresponding_entries()
+    
+    assert Project.error_array[0] == "ERROR: FAMILY: US26: 1: @I1@: Husband id does not match with family id in individuals spouse entry"
+    
+    return True
+
+
+# In[ ]:
+
+
+def test_corresponding_entries_valid_entries():
+    family_dic = {'@F1@': {'FAM_LINE': 1, 'HUSB': '@I1@', 'husband_object': {'SPOUSE': ['@F1@']}}}
+    
+    Project.family_dic = family_dic
+    Project.error_array = []
+    
+    Project.check_corresponding_entries()
+    
+    assert len(Project.error_array) == 0
+    
+    return True
+
+
 # In[305]:
 
 
@@ -3087,7 +3119,10 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue(test_list_siblings_by_age_success())
     def test_list_siblings_by_age_fail(self):
         self.assertTrue(test_list_siblings_by_age_fail())
-        
+    def test_corresponding_entries_invalid_entries(self):
+        self.assertTrue(test_corresponding_entries_invalid_entries())
+    def test_corresponding_entries_valid_entries(self):
+        self.assertTrue(test_corresponding_entries_valid_entries())       
         
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStringMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
