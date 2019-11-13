@@ -79,7 +79,7 @@ Families Table
 +-------+-------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |   ID  |   Married   |  Divorced  | Husband ID |     Husband Name     | Wife ID |       Wife Name       |                                                                     Children                                                                    |
 +-------+-------------+------------+------------+----------------------+---------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-|  @F1@ |  1970-11-29 |     NA     |    @I6@    |    Samuel /Venzon/   |   @I1@  |   Willodean /Malagon/ |                                                                    @I7@,@I13@                                                                   |
+|  @F1@ |  1970-11-29 |     NA     |    @I6@    |    Samuel /Venzon/   |   @I1@  |   Willodean /Malagon/ |                                                                       @I13@                                                                     |
 |  @F2@ |  1947-11-22 |     NA     |    @I2@    |   Stephan /Malagon/  |   @I3@  |   Laverna /Leonhardt/ |                                                               @I1@,@I4@,@I5@,@I14@                                                              |
 |  @F3@ |   1925-4-28 |     NA     |    @I16@   |   Johnny /Malagon/   |   @I17@ |      Lura /Lomas/     |  @I2@,@I18@,@I20@,@I21@,@I22@,@I23@,@I24@,@I25@,@I26@,@I27@,@I28@,@I29@,@I30@,@I31@,@I32@,@I33@,@I45@,@I48@,@I56@,@I58@,@I59@,@I62@,@I65@,@I66@ |
 |  @F4@ |      NA     |     NA     |    @I4@    |     Ken /Malagon/    |   @I20@ |    Lucile /Malagon/   |                                                                        NA                                                                       |
@@ -113,7 +113,6 @@ Families Table
 
 US28: List siblings by decreasing age
 +-----Family @F1@-----+
-Individual:@I7@, Age:46 
 Individual:@I13@, Age:44 
 +-----Family @F3@-----+
 Individual:@I18@, Age:200 
@@ -289,6 +288,7 @@ ERROR: INDIVIDUAL: US42: 23: @I1@: DEAT Date is Invalid 1974-2-40
 ERROR: INDIVIDUAL: US27: 25: @I1@: Person does not have birth date when caculating age
 ERROR: INDIVIDUAL: US41: 104: @I9@: Invalid month format!
 ERROR: INDIVIDUAL: US22: 472: Two or more Individuals @I46@: have the same ID
+ERROR: FAMILY: US26: 716: Family @F1@ has invalid child ID
 ERROR: INDIVIDUAL: US01: 20: @I1@: Individual does not have a birth date
 ERROR: INDIVIDUAL: US01: 131: @I12@: Individual has birth date 2021-8-9 later than today
 ERROR: INDIVIDUAL: US02: 811: @I14@: Person has marriage date 1968-6-4 before birth date 1970-11-8
@@ -388,7 +388,6 @@ ANOMALY: INDIVIDUAL: US10: 376: @I36@: Husband of family @F13@ is younger than 1
 ANOMALY: INDIVIDUAL: US11: 280: @I27@: Performing bigamy
 ANOMALY: FAMILY: US14: 907: @F25@: Family has more than 5 siblings with same birthdate
 ANOMALY: FAMILY: US15: 736: @F3@: Family has 24 siblings which is more than 15 siblings
-ANOMALY: INDIVIDUAL: US16: 77: @I7@: Individual has different last name Vezon than family Venzon
 ANOMALY: INDIVIDUAL: US16: 117: @I11@: Individual has different last name Tung than family Finklea
 ANOMALY: INDIVIDUAL: US16: 197: @I19@: Individual has different last name Iglesias than family Finklea
 ANOMALY: INDIVIDUAL: US16: 699: @I71@: Individual has different last name Venzon than family Malagon
@@ -428,56 +427,3 @@ ANOMALY: FAMILY: US34: 791: @F8@: One of the spouses or both have no age value
 ANOMALY: FAMILY: US34: 794: @F6@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 841: @F14@: Family has a large spouse age difference
 ANOMALY: FAMILY: US34: 848: @F15@: Family has a large spouse age difference
-US33: Orphaned Children
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-
-US33: Orphaned Children
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-|   ID  |           Name          | Gender |  Birthday  | Age | Alive | Death | Spouse |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-|  @I3@ |     Hodia /Christos/    |    M   |  2004-9-7  |  15 |  True |   NA  |   NA   |
-| @I10@ |  FÃ©licienne /Christos/ |    F   |  2004-9-18 |  15 |  True |   NA  |   NA   |
-+-------+-------------------------+--------+------------+-----+-------+-------+--------+
-
-US28: List siblings by decreasing age
-+-----End of US28-----+
-
-US28: List siblings by decreasing age
-+-----Family @F1@-----+
-Individual:@I7@, Age:46 
-Individual:@I13@, Age:44 
-+-----End of US28-----+
-
-US31: Unmarried people over 30
-+------+---------------------+--------+-----------+-----+-------+-------+--------+
-|  ID  |         Name        | Gender |  Birthday | Age | Alive | Death | Spouse |
-+------+---------------------+--------+-----------+-----+-------+-------+--------+
-| @I6@ |  IsaÃ­as /Christos/ |    F   |  1950-9-8 |  69 |  True |   NA  |   NA   |
-| @I7@ |   Gunni /Christos/  |    M   |  1949-9-8 |  70 |  True |   NA  |   NA   |
-+------+---------------------+--------+-----------+-----+-------+-------+--------+
-
-US39: List Upcoming Anniversaries Table
-+------+-------------+------------+----------------+---------+---------------+
-|  ID  |   Married   | Husband ID |  Husband Name  | Wife ID |   Wife Name   |
-+------+-------------+------------+----------------+---------+---------------+
-| @F1@ |  2019-11-22 |    @I2@    |  Johny /Chang/ |   @I3@  |  Nancy /Tsai/ |
-+------+-------------+------------+----------------+---------+---------------+
-
-US38 List Upcoming Birthdays Table
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-| @I2@ |  Johny /Chang/ |    M   |  1958-11-25 |  61 |  True |   NA  |  @F1@  |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-
-US38 List Upcoming Birthdays Table
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-|  ID  |      Name      | Gender |   Birthday  | Age | Alive | Death | Spouse |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-| @I1@ |  David /Chang/ |    M   |  2019-11-22 |  31 |  True |   NA  |   NA   |
-+------+----------------+--------+-------------+-----+-------+-------+--------+
-
